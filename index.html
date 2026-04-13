@@ -113,88 +113,79 @@
     /* ── PROJECTS ── */
     #projects{background:linear-gradient(160deg,#f2f8ff 0%,#ede8ff 50%,#fffbee 100%);}
     .proj-wrap{max-width:1100px;margin:0 auto;}
+    .sec-ew{display:inline-flex;align-items:center;gap:0.6rem;margin-bottom:0.7rem;}
+    .ew-bar{width:34px;height:2px;background:linear-gradient(90deg,var(--gold),#f6d27a);border-radius:99px;}
+    .sec-ew span{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:var(--gold);}
+    .sec-h{font-family:Georgia,serif;font-size:clamp(1.9rem,3vw,2.7rem);font-weight:700;color:var(--deep);line-height:1.2;}
+    .sec-h em{font-style:italic;color:var(--royal);}
+    .sec-p{margin-top:0.75rem;font-size:0.95rem;color:var(--mid);line-height:1.75;max-width:640px;}
 
-    /* section sub-label */
-    .proj-section-label{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--light);margin-bottom:1.2rem;padding-bottom:0.6rem;border-bottom:1px solid rgba(106,180,232,0.15);}
+    .proj-section-label,.psec-label{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--light);margin-bottom:1.2rem;padding-bottom:0.6rem;border-bottom:1px solid rgba(106,180,232,0.15);}
 
-    /* ── FEATURED CARDS (2 col grid) ── */
     .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-bottom:3rem;}
-    .feat-card{
-      background:white;border-radius:18px;overflow:hidden;
-      border:1px solid rgba(30,107,181,0.15);
-      box-shadow:0 8px 36px rgba(30,107,181,0.1);
-      transition:transform 0.35s,box-shadow 0.35s;
-      display:flex;flex-direction:column;
-    }
-    .feat-card:hover{transform:translateY(-6px);box-shadow:0 20px 55px rgba(30,107,181,0.18);}
+    .feat-card,.fc{background:white;border-radius:18px;overflow:hidden;border:1px solid rgba(30,107,181,0.15);box-shadow:0 8px 36px rgba(30,107,181,0.1);transition:transform 0.35s,box-shadow 0.35s;display:flex;flex-direction:column;}
+    .feat-card:hover,.fc:hover{transform:translateY(-6px);box-shadow:0 20px 55px rgba(30,107,181,0.18);}
 
-    /* thumb */
-    .feat-thumb{
-      display:flex;flex-direction:column;align-items:center;justify-content:center;
-      padding:2rem 1.5rem 1.5rem;gap:1rem;min-height:230px;position:relative;overflow:hidden;
-    }
-    .feat-thumb::before{content:'';position:absolute;width:180px;height:180px;background:rgba(255,255,255,0.12);border-radius:50%;top:-55px;right:-55px;}
-    .feat-thumb::after{content:'';position:absolute;width:130px;height:130px;background:rgba(255,255,255,0.08);border-radius:50%;bottom:-35px;left:-25px;}
+    .feat-thumb,.ft{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.5rem 1.5rem;gap:1rem;min-height:230px;position:relative;overflow:hidden;}
+    .feat-thumb::before,.ft::before{content:'';position:absolute;width:180px;height:180px;background:rgba(255,255,255,0.12);border-radius:50%;top:-55px;right:-55px;}
+    .feat-thumb::after,.ft::after{content:'';position:absolute;width:130px;height:130px;background:rgba(255,255,255,0.08);border-radius:50%;bottom:-35px;left:-25px;}
     .ft-green{background:linear-gradient(135deg,#c8f0e0,#7ec8b0);}
-    .ft-blue {background:linear-gradient(135deg,#cce5f8,#7bb8e8);}
-    .ft-lav  {background:linear-gradient(135deg,#e0d5f8,#b8a0e0);}
-    .ft-gold {background:linear-gradient(135deg,#f5c842,#d4860a);}
+    .ft-blue{background:linear-gradient(135deg,#cce5f8,#7bb8e8);}
+    .ft-lav{background:linear-gradient(135deg,#e0d5f8,#b8a0e0);}
+    .ft-gold{background:linear-gradient(135deg,#f5c842,#d4860a);}
+    .ft-navy{background:linear-gradient(135deg,#355fa5,#0c2d61);}
+    .ft-teal{background:linear-gradient(135deg,#55c0c5,#0f7f86);}
+    .ft-ind{background:linear-gradient(135deg,#8ea8f0,#4d68b8);}
+    .ft-amb{background:linear-gradient(135deg,#f3cb74,#d08a1b);}
 
-    .feat-badge{position:relative;z-index:1;display:inline-flex;align-items:center;gap:0.35rem;background:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.4);border-radius:100px;padding:0.28rem 0.9rem;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:white;}
-    .feat-emoji{font-size:3.5rem;position:relative;z-index:1;}
-    .feat-stats{display:flex;gap:0.8rem;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;}
-    .feat-stat{text-align:center;background:rgba(255,255,255,0.2);border-radius:10px;padding:0.5rem 0.75rem;}
-    .feat-stat .num{display:block;font-size:1rem;font-weight:800;color:white;}
-    .feat-stat .lbl{display:block;font-size:0.6rem;color:rgba(255,255,255,0.8);letter-spacing:0.06em;text-transform:uppercase;}
+    .feat-badge,.ft-bdg{position:relative;z-index:1;display:inline-flex;align-items:center;gap:0.35rem;background:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.4);border-radius:100px;padding:0.28rem 0.9rem;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:white;}
+    .feat-emoji,.ft-em{font-size:3.5rem;position:relative;z-index:1;}
+    .feat-stats,.ft-stats{display:flex;gap:0.8rem;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;}
+    .feat-stat,.ft-st{text-align:center;background:rgba(255,255,255,0.2);border-radius:10px;padding:0.5rem 0.75rem;}
+    .feat-stat .num,.ft-st .n,.other-stat .num,.ostat .n{display:block;font-size:1rem;font-weight:800;color:white;}
+    .feat-stat .lbl,.ft-st .l,.other-stat .lbl,.ostat .l{display:block;font-size:0.6rem;color:rgba(255,255,255,0.8);letter-spacing:0.06em;text-transform:uppercase;}
 
-    /* body */
-    .feat-body{padding:1.6rem;flex:1;display:flex;flex-direction:column;}
-    .feat-top{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.45rem;flex-wrap:wrap;}
-    .feat-type{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--sky-mid);}
-    .feat-star{font-size:0.68rem;background:rgba(240,180,41,0.15);color:var(--gold);border:1px solid rgba(240,180,41,0.3);border-radius:100px;padding:0.18rem 0.65rem;font-weight:700;letter-spacing:0.06em;}
-    .feat-star.docker{background:rgba(106,180,232,0.15);color:var(--royal);border-color:rgba(106,180,232,0.35);}
-    .feat-body h3{font-family:Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--deep);margin-bottom:0.6rem;}
-    .feat-body>p{font-size:0.84rem;line-height:1.75;color:var(--mid);margin-bottom:1rem;}
-    .feat-highlights{display:flex;flex-direction:column;gap:0.45rem;margin-bottom:1.1rem;}
-    .feat-hl{display:flex;align-items:flex-start;gap:0.55rem;font-size:0.8rem;color:var(--mid);line-height:1.5;}
-    .feat-hl::before{content:'▸';color:var(--royal);flex-shrink:0;margin-top:1px;}
-    .proj-tags{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:1.1rem;}
+    .feat-body,.fb{padding:1.6rem;flex:1;display:flex;flex-direction:column;}
+    .feat-top,.fb-top{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.45rem;flex-wrap:wrap;}
+    .feat-type,.fb-type{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--sky-mid);}
+    .feat-star,.fb-tag{font-size:0.68rem;background:rgba(240,180,41,0.15);color:var(--gold);border:1px solid rgba(240,180,41,0.3);border-radius:100px;padding:0.18rem 0.65rem;font-weight:700;letter-spacing:0.06em;}
+    .feat-star.docker,.fb-tag.teal{background:rgba(106,180,232,0.15);color:var(--royal);border-color:rgba(106,180,232,0.35);}
+    .feat-body h3,.fb h3{font-family:Georgia,serif;font-size:1.2rem;font-weight:700;color:var(--deep);margin-bottom:0.6rem;}
+    .feat-body>p,.fb>p{font-size:0.84rem;line-height:1.75;color:var(--mid);margin-bottom:1rem;}
+    .feat-highlights,.fb-hl{display:flex;flex-direction:column;gap:0.45rem;margin-bottom:1.1rem;}
+    .feat-hl,.fhl{display:flex;align-items:flex-start;gap:0.55rem;font-size:0.8rem;color:var(--mid);line-height:1.5;}
+    .feat-hl::before,.fhl::before{content:'▸';color:var(--royal);flex-shrink:0;margin-top:1px;}
+    .proj-tags,.tags{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:1.1rem;}
     .tag{padding:0.22rem 0.7rem;background:rgba(106,180,232,0.1);border:1px solid rgba(106,180,232,0.25);border-radius:100px;font-size:0.72rem;color:var(--royal);}
-    .feat-links{margin-top:auto;}
-    .proj-btn{display:inline-block;padding:0.55rem 1.3rem;font-size:0.78rem;font-weight:500;color:var(--royal);text-decoration:none;border:1.5px solid rgba(30,107,181,0.3);border-radius:4px;background:transparent;transition:all 0.25s;}
-    .proj-btn:hover{background:var(--royal);color:white;border-color:var(--royal);transform:translateY(-1px);}
-    .proj-btn.fill{background:var(--royal);color:white;border-color:var(--royal);}
-    .proj-btn.fill:hover{background:var(--deep);border-color:var(--deep);}
+    .feat-links,.fl,.other-links,.ol{margin-top:auto;}
+    .proj-btn,.pbtn{display:inline-block;padding:0.55rem 1.3rem;font-size:0.78rem;font-weight:500;color:var(--royal);text-decoration:none;border:1.5px solid rgba(30,107,181,0.3);border-radius:4px;background:transparent;transition:all 0.25s;}
+    .proj-btn:hover,.pbtn:hover{background:var(--royal);color:white;border-color:var(--royal);transform:translateY(-1px);}
+    .proj-btn.fill,.pbtn.fill{background:var(--royal);color:white;border-color:var(--royal);}
+    .proj-btn.fill:hover,.pbtn.fill:hover{background:var(--deep);border-color:var(--deep);}
 
-    /* ── OTHER CARDS (2 col grid, slightly more compact) ── */
     .other-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;}
-    .other-card{
-      background:white;border-radius:16px;overflow:hidden;
-      border:1px solid rgba(106,180,232,0.18);
-      box-shadow:0 4px 20px rgba(30,107,181,0.07);
-      transition:transform 0.35s,box-shadow 0.35s;
-      display:flex;flex-direction:column;
-    }
-    .other-card:hover{transform:translateY(-5px);box-shadow:0 14px 40px rgba(30,107,181,0.13);}
-    .other-thumb{
-      display:flex;flex-direction:column;align-items:center;justify-content:center;
-      padding:1.6rem 1.2rem 1.2rem;gap:0.8rem;min-height:170px;position:relative;overflow:hidden;
-    }
-    .other-thumb::before{content:'';position:absolute;width:130px;height:130px;background:rgba(255,255,255,0.12);border-radius:50%;top:-40px;right:-40px;}
-    .other-thumb::after{content:'';position:absolute;width:100px;height:100px;background:rgba(255,255,255,0.08);border-radius:50%;bottom:-28px;left:-18px;}
-    .other-emoji{font-size:3rem;position:relative;z-index:1;}
-    .other-stats{display:flex;gap:0.6rem;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;}
-    .other-stat{text-align:center;background:rgba(255,255,255,0.2);border-radius:8px;padding:0.4rem 0.6rem;}
-    .other-stat .num{display:block;font-size:0.85rem;font-weight:800;color:white;}
-    .other-stat .lbl{display:block;font-size:0.58rem;color:rgba(255,255,255,0.8);letter-spacing:0.05em;text-transform:uppercase;}
-    .other-body{padding:1.4rem;flex:1;display:flex;flex-direction:column;}
-    .other-type{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--sky-mid);margin-bottom:0.35rem;}
-    .other-body h3{font-family:Georgia,serif;font-size:1.08rem;font-weight:700;color:var(--deep);margin-bottom:0.5rem;}
-    .other-body>p{font-size:0.82rem;line-height:1.65;color:var(--mid);margin-bottom:0.8rem;}
-    .other-highlights{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:0.9rem;}
-    .other-hl{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.78rem;color:var(--mid);line-height:1.5;}
-    .other-hl::before{content:'▸';color:var(--light);flex-shrink:0;margin-top:1px;}
-    .other-links{margin-top:auto;}
+    .other-card,.oc{background:white;border-radius:16px;overflow:hidden;border:1px solid rgba(106,180,232,0.18);box-shadow:0 4px 20px rgba(30,107,181,0.07);transition:transform 0.35s,box-shadow 0.35s;display:flex;flex-direction:column;}
+    .other-card:hover,.oc:hover{transform:translateY(-5px);box-shadow:0 14px 40px rgba(30,107,181,0.13);}
+    .other-thumb,.ot{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.6rem 1.2rem 1.2rem;gap:0.8rem;min-height:170px;position:relative;overflow:hidden;}
+    .other-thumb::before,.ot::before{content:'';position:absolute;width:130px;height:130px;background:rgba(255,255,255,0.12);border-radius:50%;top:-40px;right:-40px;}
+    .other-thumb::after,.ot::after{content:'';position:absolute;width:100px;height:100px;background:rgba(255,255,255,0.08);border-radius:50%;bottom:-28px;left:-18px;}
+    .other-emoji,.ot-em{font-size:3rem;position:relative;z-index:1;}
+    .other-stats,.ot-st{display:flex;gap:0.6rem;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;}
+    .other-stat,.ostat{text-align:center;background:rgba(255,255,255,0.2);border-radius:8px;padding:0.4rem 0.6rem;}
+    .other-stat .num,.ostat .n{font-size:0.85rem;}
+    .other-stat .lbl,.ostat .l{font-size:0.58rem;letter-spacing:0.05em;}
+    .other-body,.ob{padding:1.4rem;flex:1;display:flex;flex-direction:column;}
+    .other-type,.ob-type{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;color:var(--sky-mid);margin-bottom:0.35rem;}
+    .other-body h3,.ob h3{font-family:Georgia,serif;font-size:1.08rem;font-weight:700;color:var(--deep);margin-bottom:0.5rem;}
+    .other-body>p,.ob>p{font-size:0.82rem;line-height:1.65;color:var(--mid);margin-bottom:0.8rem;}
+    .other-highlights,.ob-hl{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:0.9rem;}
+    .other-hl,.ohl{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.78rem;color:var(--mid);line-height:1.5;}
+    .other-hl::before,.ohl::before{content:'▸';color:var(--light);flex-shrink:0;margin-top:1px;}
+
+    .gh-cta{margin-top:2rem;display:flex;align-items:center;justify-content:center;gap:0.45rem;flex-wrap:wrap;font-size:0.86rem;color:var(--mid);}
+    .gh-cta svg{color:var(--royal);}
+    .gh-cta a{color:var(--royal);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(30,107,181,0.35);}
+    .gh-cta a:hover{color:var(--deep);border-bottom-color:var(--deep);}
 
     /* ── CONTACT ── */
     #contact{background:linear-gradient(145deg,var(--deep) 0%,#0a1e45 50%,var(--navy) 100%);padding-bottom:3rem;}
@@ -313,7 +304,7 @@
   <div class="about-grid">
     <div class="about-text rv">
       <div class="sec-head"><div class="sec-label">Who I Am</div><h2 class="sec-title">About <em>Me</em></h2></div>
-      <p>I'm a Semester 4 student at <strong>CEP-CCIT FTUI (Faculty of Engineering, Universitas Indonesia)</strong>, specializing in Full Stack Development with a deep focus on <strong>Backend Architecture &amp; Native Web Development</strong>.</p>
+      <p>I'm a Semester 4 student at <strong>CEP-CCIT FTUI (Faculty of Engineering, Universitas Indonesia)</strong>, specializing in Full Stack Development with a deep focus on <strong>Backend Architecture, Web Development, and Mobile App Development</strong>.</p>
       <p>My passion lies in understanding how systems work at their core — building robust, scalable backend logic and connecting it seamlessly to the web. I believe a great developer doesn't just write code; they design systems that stand the test of time.</p>
       <p>Like a butterfly, I'm always evolving — transforming challenges into elegant solutions. Like a sunflower, I grow toward the light: always learning, always reaching further.</p>
       <div class="quote-block"><p>"The best architecture is one you never have to explain."</p></div>
@@ -326,8 +317,9 @@
   </div>
   <div class="about-pills-grid">
     <div class="pill rv"><div class="pill-icon pi-sky">🏗️</div><div><h4>System Architect</h4><p>Backend &amp; Full Stack Web</p></div></div>
-    <div class="pill rv"><div class="pill-icon pi-gold">⚡</div><div><h4>Pure Native</h4><p>HTML5, CSS3, PHP Native</p></div></div>
+    <div class="pill rv"><div class="pill-icon pi-gold">⚡</div><div><h4>Web &amp; Mobile Stack</h4><p>HTML5, CSS3, PHP Native, Flutter</p></div></div>
     <div class="pill rv"><div class="pill-icon pi-lav">🗄️</div><div><h4>Data Driven</h4><p>MySQL, JDBC, RESTful API</p></div></div>
+    <div class="pill rv"><div class="pill-icon pi-sky">🧩</div><div><h4>Framework Experience</h4><p>CodeIgniter 4, Spring Boot</p></div></div>
     <div class="pill rv"><div class="pill-icon pi-deep">🦋</div><div><h4>Always Growing</h4><p>Adaptive, curious, detail-oriented</p></div></div>
   </div>
 </section>
@@ -347,6 +339,7 @@
     </div>
     <div id="tab-backend" class="exp-panel active">
       <div class="skill-card"><div class="skill-card-icon">☕</div><h4>Java Spring Boot</h4><p>RESTful API development with layered architecture, dependency injection, and Spring Security.</p></div>
+      <div class="skill-card"><div class="skill-card-icon">🔥</div><h4>CodeIgniter 4</h4><p>MVC web application development with structured routing, controller logic, and maintainable modular architecture.</p></div>
       <div class="skill-card"><div class="skill-card-icon">🐘</div><h4>PHP Native</h4><p>Deep HTTP flow understanding — routing, sessions, headers, and raw server-side logic without frameworks.</p></div>
       <div class="skill-card"><div class="skill-card-icon">🖥️</div><h4>Java Desktop (Swing/AWT)</h4><p>Standalone GUI applications with event-driven architecture and direct database connectivity.</p></div>
       <div class="skill-card"><div class="skill-card-icon">⚡</div><h4>Event-Driven Architecture</h4><p>Designing systems around asynchronous events and message-passing patterns for scalable apps.</p></div>
@@ -358,6 +351,7 @@
       <div class="skill-card lav"><div class="skill-card-icon">🌐</div><h4>Distributed Systems</h4><p>Building services that communicate across networks with reliability and fault tolerance in mind.</p></div>
     </div>
     <div id="tab-frontend" class="exp-panel">
+      <div class="skill-card gold"><div class="skill-card-icon">📱</div><h4>Flutter</h4><p>Cross-platform mobile app development with reusable widgets, responsive UI, and REST API integration.</p></div>
       <div class="skill-card gold"><div class="skill-card-icon">🌐</div><h4>Web Native (HTML5, CSS3)</h4><p>Pure semantic markup and modern CSS — no framework dependency, full control over the output.</p></div>
       <div class="skill-card gold"><div class="skill-card-icon">✨</div><h4>Vanilla JavaScript</h4><p>DOM manipulation, async/await, fetch API, and interactive UI without relying on external libraries.</p></div>
       <div class="skill-card gold"><div class="skill-card-icon">☕</div><h4>Java GUI Components</h4><p>Swing and AWT component design, layout managers, and custom-painted user interface elements.</p></div>
@@ -372,122 +366,162 @@
   <div class="spark" style="width:5px;height:5px;background:var(--royal);border-radius:50%;top:5%;left:6%;--sp:4s;"></div>
   <div class="spark" style="width:5px;height:5px;background:var(--gold);border-radius:50%;bottom:18%;right:7%;--sp:3.5s;--spl:1s;"></div>
 
-  <div class="sec-head rv"><div class="sec-label">My Work</div><h2 class="sec-title">Selected <em>Projects</em></h2></div>
-
+  <div class="sec-head rv">
+    <div class="sec-ew"><div class="ew-bar"></div><span>My Work</span></div>
+    <h2 class="sec-h">Selected <em>Projects</em></h2>
+    <p class="sec-p">Real systems built with real constraints - no tutorials, no shortcuts.</p>
+  </div>
   <div class="proj-wrap">
-    <!-- ── FEATURED 2 ── -->
-    <div class="proj-section-label rv">⭐ Featured Projects</div>
+    <div class="psec-label rv">⭐ Featured Projects</div>
     <div class="feat-grid">
-
-      <!-- Lab Inventory -->
-      <div class="feat-card rv">
-        <div class="feat-thumb ft-green">
-          <span class="feat-badge">⭐ Featured</span>
-          <span class="feat-emoji">🧪</span>
-          <div class="feat-stats">
-            <div class="feat-stat"><span class="num">REST</span><span class="lbl">API Design</span></div>
-            <div class="feat-stat"><span class="num">Swagger</span><span class="lbl">Auto Docs</span></div>
-            <div class="feat-stat"><span class="num">CI/CD</span><span class="lbl">Pipeline</span></div>
+      <div class="fc rv">
+        <div class="ft ft-navy">
+          <span class="ft-bdg">⭐ Featured</span>
+          <span class="ft-em">📱</span>
+          <div class="ft-stats">
+            <div class="ft-st"><span class="n">Flutter</span><span class="l">Mobile</span></div>
+            <div class="ft-st"><span class="n">REST API</span><span class="l">Integration</span></div>
+            <div class="ft-st"><span class="n">Realtime</span><span class="l">Sync</span></div>
           </div>
         </div>
-        <div class="feat-body">
-          <div class="feat-top">
-            <span class="feat-type">REST API / Backend</span>
-            <span class="feat-star">Most Technical</span>
+        <div class="fb">
+          <div class="fb-top"><span class="fb-type">Mobile Application</span><span class="fb-tag">Most Recent</span></div>
+          <h3>Alchemist: Inventory Laboratory Mobile App</h3>
+          <p>Laboratory inventory system reimagined for mobile - built with Flutter and powered by REST API, enabling real-time data synchronization across devices.</p>
+          <div class="fb-hl">
+            <div class="fhl">Flutter-based mobile app - responsive UI with dark/light theme support</div>
+            <div class="fhl">REST API integration - seamless client-server communication via local network</div>
+            <div class="fhl">Role-based management: employee &amp; student data handling</div>
+            <div class="fhl">Laboratory asset tracking - categories, condition logs, and stock monitoring</div>
+            <div class="fhl">Stock transaction system - manage incoming &amp; outgoing inventory</div>
+            <div class="fhl">User experience features - notifications, settings, and account management</div>
           </div>
-          <h3>Laboratory Inventory System</h3>
-          <p>High-performance RESTful API for the Distributed System module — manages lab equipment logs and student transactions with automated reporting.</p>
-          <div class="feat-highlights">
-            <div class="feat-hl">Layered Spring Boot architecture: Controller → Service → Repository</div>
-            <div class="feat-hl">Auto-generated Swagger/OpenAPI docs — zero manual documentation</div>
-            <div class="feat-hl">CI/CD pipeline for automated build &amp; deployment</div>
-            <div class="feat-hl">Built for distributed system module — designed with scalability in mind</div>
-          </div>
-          <div class="proj-tags"><span class="tag">Java Spring Boot</span><span class="tag">Java 25</span><span class="tag">Swagger</span><span class="tag">CI/CD</span><span class="tag">REST</span></div>
-          <div class="feat-links"><a href="https://github.com/neyzamaylanies/inventory_laboratorium" target="_blank" class="proj-btn fill">Repository →</a></div>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">REST API</span><span class="tag">Mobile</span><span class="tag">Inventory</span></div>
+          <div class="fl"><a href="#" class="pbtn fill">Repository (Isi Link) →</a></div>
         </div>
       </div>
-
-      <!-- Pharmacy Web -->
-      <div class="feat-card rv">
-        <div class="feat-thumb ft-blue">
-          <span class="feat-badge">⭐ Featured</span>
-          <span class="feat-emoji">🏥</span>
-          <div class="feat-stats">
-            <div class="feat-stat"><span class="num">PHP</span><span class="lbl">Native</span></div>
-            <div class="feat-stat"><span class="num">Docker</span><span class="lbl">Container</span></div>
-            <div class="feat-stat"><span class="num">RBAC</span><span class="lbl">Role Access</span></div>
+      <div class="fc rv">
+        <div class="ft ft-teal">
+          <span class="ft-bdg">⭐ Featured</span>
+          <span class="ft-em">🍽️</span>
+          <div class="ft-stats">
+            <div class="ft-st"><span class="n">CodeIgniter 4</span><span class="l">MVC</span></div>
+            <div class="ft-st"><span class="n">POS</span><span class="l">System</span></div>
+            <div class="ft-st"><span class="n">RBAC</span><span class="l">Admin/Cashier</span></div>
           </div>
         </div>
-        <div class="feat-body">
-          <div class="feat-top">
-            <span class="feat-type">Web Application</span>
-            <span class="feat-star docker">🐳 Dockerized</span>
+        <div class="fb">
+          <div class="fb-top"><span class="fb-type">Web POS System</span><span class="fb-tag teal">Featured</span></div>
+          <h3>BiteSpace: Restaurant POS System</h3>
+          <p>Modern restaurant operations simplified - a web-based POS system built with CodeIgniter 4 to manage orders, menus, and transactions efficiently.</p>
+          <div class="fb-hl">
+            <div class="fhl">CodeIgniter 4 powered - structured MVC architecture for scalable development</div>
+            <div class="fhl">Point of Sale system - streamlined order processing and transaction handling</div>
+            <div class="fhl">Role-based access: admin &amp; cashier for controlled system operations</div>
+            <div class="fhl">Menu &amp; table management - organized handling of restaurant data</div>
+            <div class="fhl">Transaction tracking - efficient recording of daily sales activities</div>
+            <div class="fhl">User-friendly interface - optimized for fast-paced cashier interactions</div>
           </div>
-          <h3>Pharmacy Management System</h3>
-          <p>Digitized pharmacy operations — built with PHP Native and zero framework dependency, containerized with Docker for consistent deployment across environments.</p>
-          <div class="feat-highlights">
-            <div class="feat-hl">Full PHP Native — raw HTTP flow, custom routing, session management</div>
-            <div class="feat-hl">Dockerized deployment — runs identically in any environment</div>
-            <div class="feat-hl">Role-based access control (admin, pharmacist, cashier)</div>
-            <div class="feat-hl">Expiration alert system &amp; real-time stock tracking</div>
-          </div>
-          <div class="proj-tags"><span class="tag">PHP Native</span><span class="tag">MySQL</span><span class="tag">Docker</span><span class="tag">HTML/CSS</span><span class="tag">RBAC</span></div>
-          <div class="feat-links"><a href="https://github.com/sarahnrhlzaa/Pharmacare-WebPharmacy" target="_blank" class="proj-btn fill">Repository →</a></div>
+          <div class="tags"><span class="tag">CodeIgniter 4</span><span class="tag">MySQL</span><span class="tag">POS</span><span class="tag">RBAC</span></div>
+          <div class="fl"><a href="#" class="pbtn fill">Repository (Isi Link) →</a></div>
         </div>
       </div>
     </div>
 
-    <!-- ── OTHER 2 ── -->
-    <div class="proj-section-label rv">Other Projects</div>
+    <div class="psec-label rv">Other Projects</div>
     <div class="other-grid">
-
-      <!-- Java Swing -->
-      <div class="other-card rv">
-        <div class="other-thumb ft-lav">
-          <span class="other-emoji">🖥️</span>
-          <div class="other-stats">
-            <div class="other-stat"><span class="num">JDBC</span><span class="lbl">Direct DB</span></div>
-            <div class="other-stat"><span class="num">Swing</span><span class="lbl">GUI</span></div>
+      <div class="oc rv">
+        <div class="ot ft-ind">
+          <span class="ot-em">🧪</span>
+          <div class="ot-st">
+            <div class="ostat"><span class="n">REST</span><span class="l">API</span></div>
+            <div class="ostat"><span class="n">Spring</span><span class="l">Boot</span></div>
           </div>
         </div>
-        <div class="other-body">
-          <div class="other-type">Desktop Application</div>
+        <div class="ob">
+          <div class="ob-type">Backend / REST API</div>
+          <h3>Laboratory Inventory System</h3>
+          <p>RESTful API for the Distributed System module - manages lab equipment and student transactions with layered Spring Boot architecture.</p>
+          <div class="ob-hl">
+            <div class="ohl">Layered architecture: Controller -> Service -> Repository</div>
+            <div class="ohl">Auto-generated Swagger/OpenAPI docs</div>
+            <div class="ohl">CI/CD pipeline for automated build &amp; deployment</div>
+            <div class="ohl">Designed for distributed systems - built with scalability</div>
+          </div>
+          <div class="tags"><span class="tag">Java Spring Boot</span><span class="tag">Java 25</span><span class="tag">Swagger</span><span class="tag">CI/CD</span><span class="tag">REST</span></div>
+          <div class="ol"><a href="https://github.com/neyzamaylanies/inventory_laboratorium" target="_blank" class="pbtn">Repository →</a></div>
+        </div>
+      </div>
+      <div class="oc rv">
+        <div class="ot ft-amb">
+          <span class="ot-em">🏥</span>
+          <div class="ot-st">
+            <div class="ostat"><span class="n">PHP</span><span class="l">Native</span></div>
+            <div class="ostat"><span class="n">Docker</span><span class="l">Container</span></div>
+          </div>
+        </div>
+        <div class="ob">
+          <div class="ob-type">Web Application</div>
+          <h3>Pharmacy Management System</h3>
+          <p>Full pharmacy ops digitized - PHP Native with zero framework dependency, containerized with Docker for consistent deployment.</p>
+          <div class="ob-hl">
+            <div class="ohl">Pure PHP Native - custom routing, session &amp; header management</div>
+            <div class="ohl">Dockerized - identical behavior across all environments</div>
+            <div class="ohl">Role-based access: admin, pharmacist, cashier</div>
+            <div class="ohl">Expiration alerts &amp; real-time stock tracking</div>
+          </div>
+          <div class="tags"><span class="tag">PHP Native</span><span class="tag">MySQL</span><span class="tag">Docker</span><span class="tag">RBAC</span></div>
+          <div class="ol"><a href="https://github.com/sarahnrhlzaa/Pharmacare-WebPharmacy" target="_blank" class="pbtn">Repository →</a></div>
+        </div>
+      </div>
+      <div class="oc rv">
+        <div class="ot ft-ind">
+          <span class="ot-em">🖥️</span>
+          <div class="ot-st">
+            <div class="ostat"><span class="n">JDBC</span><span class="l">Direct DB</span></div>
+            <div class="ostat"><span class="n">Swing</span><span class="l">GUI</span></div>
+          </div>
+        </div>
+        <div class="ob">
+          <div class="ob-type">Desktop Application</div>
           <h3>Java Swing Pharmacy GUI</h3>
-          <p>Standalone desktop app for real-time stock and supplier management. Direct JDBC — no ORM abstraction, full control over queries.</p>
-          <div class="other-highlights">
-            <div class="other-hl">Event-driven Swing GUI with custom layout managers</div>
-            <div class="other-hl">Direct JDBC integration — low-level database control</div>
-            <div class="other-hl">Real-time stock update &amp; supplier management</div>
+          <p>Standalone desktop app for real-time stock and supplier management. Direct JDBC - no ORM, full query control.</p>
+          <div class="ob-hl">
+            <div class="ohl">Event-driven Swing GUI with custom layout managers</div>
+            <div class="ohl">Direct JDBC - low-level database control, no ORM abstraction</div>
+            <div class="ohl">Real-time stock updates &amp; supplier management</div>
           </div>
-          <div class="proj-tags"><span class="tag">Java Swing</span><span class="tag">JDBC</span><span class="tag">NetBeans</span><span class="tag">MySQL</span></div>
-          <div class="other-links"><a href="https://github.com/sarahnrhlzaa/GUI-PharmacyManagementSystem" target="_blank" class="proj-btn">Repository →</a></div>
+          <div class="tags"><span class="tag">Java Swing</span><span class="tag">JDBC</span><span class="tag">MySQL</span></div>
+          <div class="ol"><a href="https://github.com/sarahnrhlzaa/GUI-PharmacyManagementSystem" target="_blank" class="pbtn">Repository →</a></div>
         </div>
       </div>
-
-      <!-- Brainventure -->
-      <div class="other-card rv">
-        <div class="other-thumb ft-gold">
-          <span class="other-emoji">🧠</span>
-          <div class="other-stats">
-            <div class="other-stat"><span class="num">Figma</span><span class="lbl">Design</span></div>
-            <div class="other-stat"><span class="num">UX</span><span class="lbl">Research</span></div>
+      <div class="oc rv">
+        <div class="ot ft-amb">
+          <span class="ot-em">🧠</span>
+          <div class="ot-st">
+            <div class="ostat"><span class="n">Figma</span><span class="l">Design</span></div>
+            <div class="ostat"><span class="n">UX</span><span class="l">Research</span></div>
           </div>
         </div>
-        <div class="other-body">
-          <div class="other-type">UI/UX Design</div>
+        <div class="ob">
+          <div class="ob-type">UI/UX Design</div>
           <h3>Brainventure App</h3>
-          <p>Gamified educational platform concept — puzzles and logic challenges designed to make learning engaging for all ages.</p>
-          <div class="other-highlights">
-            <div class="other-hl">Full interactive prototype in Figma</div>
-            <div class="other-hl">Gamification mechanics &amp; reward system design</div>
-            <div class="other-hl">User flow mapping &amp; accessibility considerations</div>
+          <p>Gamified educational platform - puzzles and logic challenges that make learning engaging for all ages.</p>
+          <div class="ob-hl">
+            <div class="ohl">Full interactive Figma prototype with user flows</div>
+            <div class="ohl">Gamification mechanics &amp; reward system design</div>
+            <div class="ohl">Accessibility-aware component design</div>
           </div>
-          <div class="proj-tags"><span class="tag">Figma</span><span class="tag">Prototyping</span><span class="tag">UX Research</span><span class="tag">Gamification</span></div>
-          <div class="other-links"><a href="https://www.figma.com/design/shZFvi1xjHLyWjD3RgQunu/BrainVenture?node-id=0-1" target="_blank" class="proj-btn">Figma Design →</a></div>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">Prototyping</span><span class="tag">UX Research</span></div>
+          <div class="ol"><a href="https://www.figma.com/design/shZFvi1xjHLyWjD3RgQunu/BrainVenture?node-id=0-1" target="_blank" class="pbtn">Figma →</a></div>
         </div>
       </div>
+    </div>
 
+    <div class="gh-cta rv">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      <span>More projects available on</span>
+      <a href="https://github.com/sarahnrhlzaa" target="_blank">github.com/sarahnrhlzaa</a>
     </div>
   </div>
 </section>
