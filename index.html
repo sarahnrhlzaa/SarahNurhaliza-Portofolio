@@ -65,11 +65,11 @@
     @keyframes orbit{from{transform:rotate(0deg) translateX(var(--r,150px));}to{transform:rotate(360deg) translateX(var(--r,150px));}}
 
     /* ── SECTIONS ── */
-    section{padding:6rem 5%;position:relative;overflow:hidden;}
+    section{padding:3.8rem 5% 4rem;position:relative;overflow:hidden;}
     .sec-label{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;color:var(--gold);margin-bottom:0.5rem;}
     .sec-title{font-family:Georgia,serif;font-size:clamp(1.9rem,3vw,2.7rem);font-weight:700;color:var(--deep);line-height:1.2;}
     .sec-title em{font-style:italic;color:var(--royal);}
-    .sec-head{margin-bottom:3.5rem;}
+    .sec-head{margin-bottom:2.2rem;}
 
     /* ── ABOUT ── */
     #about{background:linear-gradient(160deg,#f8fcff 0%,#f2eeff 55%,#fffdf0 100%);}
@@ -96,9 +96,10 @@
     /* ── EXPERTISE ── */
     #expertise{background:white;}
     .exp-wrap{max-width:1100px;margin:0 auto;}
-    .exp-tabs{display:flex;border-bottom:2px solid rgba(106,180,232,0.2);margin-bottom:2.5rem;}
-    .exp-tab{padding:0.9rem 2rem;font-size:0.8rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--light);background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all 0.3s;font-family:inherit;cursor:none;}
-    .exp-tab.active{color:var(--royal);border-bottom-color:var(--royal);}
+    .exp-tabs{display:inline-flex;gap:4px;border:1px solid rgba(106,180,232,0.25);border-radius:10px;padding:4px;background:#f4f8fe;width:fit-content;margin-bottom:1.8rem;box-shadow:inset 0 1px 3px rgba(30,107,181,0.04);}
+    .exp-tab{padding:0.6rem 1.4rem;font-size:0.78rem;font-weight:500;letter-spacing:0.02em;text-transform:none;color:var(--mid);background:transparent;border:none;border-radius:7px;transition:all 0.25s ease;font-family:inherit;cursor:none;display:inline-flex;align-items:center;gap:0.4rem;}
+    .exp-tab:hover{color:var(--royal);background:rgba(255,255,255,0.6);}
+    .exp-tab.active{background:white;color:var(--royal);box-shadow:0 2px 10px rgba(30,107,181,0.12),0 0 0 1px rgba(106,180,232,0.22);font-weight:600;}
     .exp-panel{display:none;}
     .exp-panel.active{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;}
     .skill-card{padding:1.8rem 1.6rem;background:linear-gradient(145deg,#f8fbff,#f0f5ff);border-radius:12px;border:1px solid rgba(106,180,232,0.18);transition:transform 0.3s,box-shadow 0.3s;position:relative;overflow:hidden;}
@@ -129,21 +130,21 @@
     .feat-thumb,.ft{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.5rem 1.5rem;gap:1rem;min-height:230px;position:relative;overflow:hidden;}
     .feat-thumb::before,.ft::before{content:'';position:absolute;width:180px;height:180px;background:rgba(255,255,255,0.12);border-radius:50%;top:-55px;right:-55px;}
     .feat-thumb::after,.ft::after{content:'';position:absolute;width:130px;height:130px;background:rgba(255,255,255,0.08);border-radius:50%;bottom:-35px;left:-25px;}
-    .ft-green{background:linear-gradient(135deg,#c8f0e0,#7ec8b0);}
-    .ft-blue{background:linear-gradient(135deg,#cce5f8,#7bb8e8);}
-    .ft-lav{background:linear-gradient(135deg,#e0d5f8,#b8a0e0);}
+    .ft-green{background:linear-gradient(135deg,#6ecfae,#3a9b7c);}
+    .ft-blue{background:linear-gradient(135deg,#5b9ee8,#2a6bc2);}
+    .ft-lav{background:linear-gradient(135deg,#8ea8f0,#4d68b8);}
     .ft-gold{background:linear-gradient(135deg,#f5c842,#d4860a);}
-    .ft-navy{background:linear-gradient(135deg,#355fa5,#0c2d61);}
-    .ft-teal{background:linear-gradient(135deg,#55c0c5,#0f7f86);}
+    .ft-navy{background:linear-gradient(135deg,#4a77be,#2b559b);}
+    .ft-teal{background:linear-gradient(135deg,#48b8be,#1a7e85);}
     .ft-ind{background:linear-gradient(135deg,#8ea8f0,#4d68b8);}
     .ft-amb{background:linear-gradient(135deg,#f3cb74,#d08a1b);}
 
     .feat-badge,.ft-bdg{position:relative;z-index:1;display:inline-flex;align-items:center;gap:0.35rem;background:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.4);border-radius:100px;padding:0.28rem 0.9rem;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:white;}
     .feat-emoji,.ft-em{font-size:3.5rem;position:relative;z-index:1;}
     .feat-stats,.ft-stats{display:flex;gap:0.8rem;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;}
-    .feat-stat,.ft-st{text-align:center;background:rgba(255,255,255,0.2);border-radius:10px;padding:0.5rem 0.75rem;}
-    .feat-stat .num,.ft-st .n,.other-stat .num,.ostat .n{display:block;font-size:1rem;font-weight:800;color:white;}
-    .feat-stat .lbl,.ft-st .l,.other-stat .lbl,.ostat .l{display:block;font-size:0.6rem;color:rgba(255,255,255,0.8);letter-spacing:0.06em;text-transform:uppercase;}
+    .feat-stat,.ft-st{text-align:center;background:rgba(255,255,255,0.22);border:1px solid rgba(255,255,255,0.35);border-radius:10px;padding:0.5rem 0.75rem;}
+    .feat-stat .num,.ft-st .n,.other-stat .num,.ostat .n{display:block;font-size:0.95rem;font-weight:800;color:white;}
+    .feat-stat .lbl,.ft-st .l,.other-stat .lbl,.ostat .l{display:block;font-size:0.6rem;color:rgba(255,255,255,0.85);letter-spacing:0.06em;text-transform:uppercase;}
 
     .feat-body,.fb{padding:1.6rem;flex:1;display:flex;flex-direction:column;}
     .feat-top,.fb-top{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.45rem;flex-wrap:wrap;}
@@ -187,37 +188,138 @@
     .gh-cta a{color:var(--royal);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(30,107,181,0.35);}
     .gh-cta a:hover{color:var(--deep);border-bottom-color:var(--deep);}
 
-    /* ── CONTACT ── */
-    #contact{background:linear-gradient(145deg,var(--deep) 0%,#0a1e45 50%,var(--navy) 100%);padding-bottom:3rem;}
-    #contact::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 15% 25%,rgba(106,180,232,0.09) 0%,transparent 55%),radial-gradient(ellipse 40% 35% at 85% 70%,rgba(240,180,41,0.06) 0%,transparent 50%);}
-    #contact .sec-label{color:rgba(184,223,245,0.6);}
-    #contact .sec-title{color:white;}
-    #contact .sec-title em{color:#b8dff5;}
-    #contact .sec-head{text-align:center;}
-    .contact-intro{font-size:0.95rem;color:rgba(168,210,240,0.65);max-width:500px;line-height:1.8;margin:0 auto 2.5rem;text-align:center;}
-    .contact-cards{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center;position:relative;z-index:1;}
-    .c-card{display:flex;align-items:center;gap:1rem;padding:1.2rem 1.8rem;background:rgba(255,255,255,0.05);border:1px solid rgba(106,180,232,0.18);border-radius:10px;text-decoration:none;min-width:220px;transition:background 0.3s,border-color 0.3s,transform 0.3s;}
-    .c-card:hover{background:rgba(106,180,232,0.1);border-color:rgba(106,180,232,0.4);transform:translateY(-3px);}
-    .c-icon{width:44px;height:44px;border-radius:10px;flex-shrink:0;background:rgba(106,180,232,0.12);border:1px solid rgba(106,180,232,0.2);display:flex;align-items:center;justify-content:center;}
-    .c-icon svg{width:20px;height:20px;fill:rgba(168,216,240,0.85);}
-    .c-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(168,210,240,0.5);margin-bottom:0.2rem;}
-    .c-val{font-size:0.85rem;color:rgba(220,235,250,0.85);}
+    /* ── EXPERIENCE ── */
+    #experience{background:white;}
+    .work-wrap{max-width:1100px;margin:0 auto;}
+    .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;max-width:1100px;margin:0 auto;}
+    @media(max-width:900px){.work-grid{grid-template-columns:1fr;}}
+    .work-company-card{background:linear-gradient(145deg,#f8fbff,#f0f5ff);border:1px solid rgba(106,180,232,0.25);border-radius:16px;padding:2rem;box-shadow:0 6px 26px rgba(30,107,181,0.08);position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s,transform .3s;display:flex;flex-direction:column;}
+    .work-company-card:hover{border-color:var(--royal);box-shadow:0 12px 38px rgba(30,107,181,0.14);transform:translateY(-4px);}
+    .work-company-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--royal),var(--sky-mid),var(--gold));}
+    .work-company-header{display:flex;align-items:center;justify-content:space-between;padding-bottom:1.4rem;margin-bottom:1.6rem;border-bottom:1px solid rgba(106,180,232,0.18);flex-wrap:wrap;gap:1rem;}
+    .work-company-info{display:flex;align-items:center;gap:1rem;}
+    .work-company-icon{width:46px;height:46px;border-radius:10px;background:rgba(106,180,232,0.15);color:var(--royal);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1px solid rgba(106,180,232,0.3);}
+    .work-company-title h3{font-family:Georgia,serif;font-size:1.3rem;color:var(--deep);line-height:1.2;}
+    .work-company-title p{font-size:0.8rem;color:var(--mid);margin-top:0.2rem;}
+    .work-industry-badge{padding:0.35rem 0.9rem;border-radius:100px;background:white;border:1px solid rgba(106,180,232,0.3);font-size:0.72rem;font-weight:600;color:var(--royal);}
+    .work-roles-timeline{display:flex;flex-direction:column;gap:2rem;position:relative;padding-left:2rem;}
+    .work-roles-timeline::before{content:'';position:absolute;left:7px;top:10px;bottom:10px;width:2px;background:linear-gradient(180deg,var(--royal) 0%,rgba(106,180,232,0.2) 100%);border-radius:2px;}
+    .work-role-item{position:relative;}
+    .work-role-dot{position:absolute;left:-2.35rem;top:4px;width:16px;height:16px;border-radius:50%;background:white;border:3px solid var(--royal);box-shadow:0 0 0 3px rgba(106,180,232,0.3);z-index:1;}
+    .work-role-dot.alt{border-color:var(--gold);box-shadow:0 0 0 3px rgba(240,180,41,0.25);}
+    .work-role-meta{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem;}
+    .work-role-title-row{display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;}
+    .work-role-title-row h4{font-family:Georgia,serif;font-size:1.15rem;color:var(--deep);}
+    .work-badge-type{font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.2rem 0.65rem;border-radius:100px;}
+    .badge-freelance{background:rgba(240,180,41,0.18);color:#b37b00;border:1px solid rgba(240,180,41,0.4);}
+    .badge-intern{background:rgba(106,180,232,0.18);color:var(--royal);border:1px solid rgba(106,180,232,0.4);}
+    .work-role-date{font-size:0.76rem;color:var(--light);font-weight:500;}
+    .work-tools-row{display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.9rem;}
+    .work-tool-tag{font-size:0.7rem;font-weight:600;padding:0.16rem 0.55rem;border-radius:4px;background:white;border:1px solid rgba(106,180,232,0.25);color:var(--mid);}
+    .work-bullets{list-style:none;display:flex;flex-direction:column;gap:0.65rem;}
+    .work-bullets li{font-size:0.84rem;line-height:1.75;color:var(--mid);position:relative;padding-left:1.35rem;text-align:justify;}
+    .work-bullets li::before{content:'▸';position:absolute;left:0;top:0;color:var(--royal);font-weight:700;font-size:0.85rem;}
+    .work-bullets li strong{color:var(--deep);font-weight:600;}
 
-    footer{background:linear-gradient(135deg,#0c1e38 0%,#0d1f3c 35%,#12213f 60%,#0e0e20 100%);text-align:center;padding:2.2rem 5%;position:relative;overflow:hidden;}
-    footer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 120% at 20% 50%,rgba(106,180,232,0.06) 0%,transparent 60%);}
-    .footer-inner{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:0.5rem;}
-    .footer-logo{font-family:Georgia,serif;font-size:1.3rem;font-weight:700;background:linear-gradient(90deg,rgba(106,180,232,0.7),rgba(184,169,224,0.7));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:0.1em;}
-    .footer-line{width:40px;height:1px;background:linear-gradient(90deg,transparent,rgba(106,180,232,0.35),transparent);margin:0.3rem 0;}
-    .footer-text{color:rgba(106,180,232,0.38);font-size:0.74rem;letter-spacing:0.08em;}
+    /* ── AI SHOWCASE CARD ── */
+    .fc-ai-showcase{background:white;border:1.5px solid rgba(30,107,181,0.25);border-radius:16px;overflow:hidden;margin-bottom:2.5rem;box-shadow:0 8px 36px rgba(30,107,181,0.08);transition:transform .35s,box-shadow .35s;}
+    .fc-ai-showcase:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(30,107,181,0.15);}
+    .ai-header-bar{background:linear-gradient(135deg,#0c2548 0%,#163c72 50%,#1e6bb5 100%);color:white;padding:1.8rem 2rem;position:relative;}
+    .ai-badge-group{display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.5rem;}
+    .ai-tag-pill{font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.85rem;border-radius:100px;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);color:white;}
+    .ai-tag-pill.gold{background:rgba(240,180,41,0.35);border-color:rgba(240,180,41,0.7);color:#fef08a;}
+    .ai-title-wrap h3{font-family:Georgia,serif;font-size:1.35rem;color:white;line-height:1.25;}
+    .ai-title-wrap p{font-size:0.84rem;color:rgba(255,255,255,0.85);margin-top:0.35rem;line-height:1.6;}
+    .ai-body{padding:1.8rem 2rem;}
+    .arch-diagram{background:#f8fbff;border:1px solid rgba(106,180,232,0.2);border-radius:12px;padding:1.2rem;margin-bottom:1.5rem;}
+    .arch-diagram-title{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;color:var(--royal);margin-bottom:0.9rem;}
+    .arch-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0.8rem;}
+    .arch-step{background:white;border:1px solid rgba(106,180,232,0.2);border-radius:10px;padding:1rem 0.8rem;text-align:center;position:relative;box-shadow:0 2px 8px rgba(12,37,72,0.04);}
+    .arch-step-num{font-size:0.62rem;font-weight:700;color:var(--light);text-transform:uppercase;margin-bottom:0.25rem;}
+    .arch-step-icon{font-size:1.4rem;margin-bottom:0.3rem;}
+    .arch-step h5{font-size:0.82rem;font-weight:700;color:var(--deep);margin-bottom:0.2rem;}
+    .arch-step p{font-size:0.72rem;color:var(--mid);line-height:1.4;}
+    .arch-arrow{position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:22px;height:22px;border-radius:50%;background:rgba(106,180,232,0.2);color:var(--royal);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;z-index:2;border:1px solid rgba(106,180,232,0.4);}
+    .ai-highlights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:1.4rem;}
+    .ai-hl-card{background:#f8fbff;border:1px solid rgba(106,180,232,0.18);border-radius:10px;padding:1.1rem;}
+    .ai-hl-card h4{font-size:0.85rem;font-weight:700;color:var(--deep);margin-bottom:0.45rem;}
+    .ai-hl-card p{font-size:0.78rem;line-height:1.65;color:var(--mid);}
+
+    /* ── EDUCATION & LEADERSHIP ── */
+    #education{background:linear-gradient(160deg,#f8fcff 0%,#f2eeff 55%,#fffdf0 100%);}
+    .edu-wrap{max-width:1100px;margin:0 auto;}
+    .edu-hero-card{background:linear-gradient(150deg,#ffffff 0%,#f4f8fe 50%,#edf5fc 100%);border:1px solid rgba(106,180,232,0.25);border-radius:16px;padding:2.2rem;box-shadow:0 8px 30px rgba(30,107,181,0.08);margin-bottom:1.8rem;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s,transform .3s;display:flex;flex-direction:column;}
+    .edu-hero-card:hover{border-color:var(--royal);box-shadow:0 16px 44px rgba(30,107,181,0.14);transform:translateY(-4px);}
+    .edu-hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--royal),#3b82f6,#60a5fa);}
+    .edu-hero-skills{display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem;margin-bottom:1.3rem;}
+    @media(max-width:768px){.edu-hero-skills{grid-template-columns:1fr;}}
+    .edu-subgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;align-items:start;}
+    @media(max-width:900px){.edu-subgrid{grid-template-columns:1fr;}}
+    .edu-card{background:linear-gradient(150deg,#ffffff 0%,#f4f8fe 50%,#edf5fc 100%);border:1px solid rgba(106,180,232,0.22);border-radius:16px;padding:2.2rem;box-shadow:0 6px 24px rgba(30,107,181,0.06);position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s,transform .3s;display:flex;flex-direction:column;}
+    .edu-card:hover{border-color:var(--royal);box-shadow:0 14px 38px rgba(30,107,181,0.12);transform:translateY(-4px);}
+    .edu-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3.5px;background:linear-gradient(90deg,var(--royal),#3b82f6);}
+    .edu-card.card-org{background:linear-gradient(150deg,#ffffff 0%,#fffdf8 50%,#fef8ee 100%);border-color:rgba(240,180,41,0.25);}
+    .edu-card.card-org:hover{border-color:var(--gold);box-shadow:0 14px 38px rgba(240,180,41,0.14);}
+    .edu-card.card-org::before{background:linear-gradient(90deg,#d4890a,var(--gold),#f7d070);}
+    .edu-card.card-hs{background:linear-gradient(150deg,#ffffff 0%,#f4f8fe 50%,#edf5fc 100%);height:fit-content;}
+    .edu-card.card-hs::before{background:linear-gradient(90deg,#0284c7,#38bdf8);}
+    .edu-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:0.9rem;flex-wrap:wrap;}
+    .edu-header-left{display:flex;align-items:center;gap:0.9rem;}
+    .edu-icon-box{width:46px;height:46px;border-radius:12px;background:rgba(106,180,232,0.15);color:var(--royal);display:flex;align-items:center;justify-content:center;font-size:1.35rem;border:1px solid rgba(106,180,232,0.3);flex-shrink:0;}
+    .edu-icon-box.gold{background:rgba(240,180,41,0.15);color:#b37b00;border-color:rgba(240,180,41,0.35);}
+    .edu-badge{display:inline-block;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.25rem 0.8rem;border-radius:100px;background:rgba(106,180,232,0.15);color:var(--royal);border:1px solid rgba(106,180,232,0.3);margin-bottom:0.6rem;}
+    .edu-badge-gold{background:rgba(240,180,41,0.15);color:#b37b00;border-color:rgba(240,180,41,0.35);}
+    .edu-badge-blue{background:rgba(106,180,232,0.15);color:var(--royal);border:1px solid rgba(106,180,232,0.3);}
+    .edu-card h3{font-family:Georgia,serif;font-size:1.25rem;color:var(--deep);margin-bottom:0.25rem;}
+    .edu-major{font-size:0.84rem;font-weight:600;color:var(--royal);margin-bottom:0.2rem;}
+    .edu-year{font-size:0.75rem;color:var(--light);margin-bottom:0.9rem;}
+    .edu-desc{font-size:0.88rem;line-height:1.8;color:var(--mid);margin-bottom:1.1rem;}
+    .edu-skills{display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.1rem;}
+    .edu-skill{display:flex;align-items:flex-start;gap:0.85rem;padding:0.8rem 1rem;background:#f8fbff;border:1px solid rgba(106,180,232,0.18);border-radius:9px;}
+    .edu-skill h5{font-size:0.92rem;font-weight:700;color:var(--deep);margin-bottom:0.22rem;line-height:1.3;}
+    .edu-skill p{font-size:0.78rem;color:var(--mid);line-height:1.45;margin:0;}
+    .edu-skill.edu-skill-center{grid-column:1 / -1;display:flex;align-items:flex-start;text-align:left;gap:.85rem;}
+    .edu-hero-card .edu-tags{justify-content:center;}
+    .edu-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:auto;}
+    .edu-card.card-org .edu-tags .tag{background:rgba(240,180,41,0.1);border-color:rgba(240,180,41,0.3);color:#b37b00;}
+
+    /* ── CONTACT ── */
+    #contact{background:linear-gradient(180deg,#091a38 0%,#06142a 100%);padding:4.8rem 5% 4.2rem;position:relative;}
+    #contact::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 55% at 20% 40%,rgba(30,107,181,0.22) 0%,transparent 55%),radial-gradient(ellipse 40% 40% at 80% 70%,rgba(30,107,181,0.12) 0%,transparent 50%);pointer-events:none;}
+    #contact .sec-head{text-align:center;margin-bottom:1.2rem;}
+    #contact .sec-ew{display:inline-flex;align-items:center;justify-content:center;gap:.75rem;margin-bottom:.6rem;}
+    #contact .sec-ew .ew-bar{width:24px;height:1.5px;background:rgba(255,255,255,.3);}
+    #contact .sec-ew span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.45);}
+    #contact .sec-title{color:white;margin-bottom:.4rem;}
+    #contact .sec-title em{color:#8fc7f2;}
+    .contact-intro{font-size:0.88rem;color:rgba(255,255,255,0.45);max-width:540px;line-height:1.8;margin:0 auto 2.8rem;text-align:center;}
+    .contact-cards{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center;max-width:960px;margin:0 auto;position:relative;z-index:1;}
+    .c-card{display:flex;align-items:center;gap:1rem;padding:.95rem 1.6rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:10px;text-decoration:none;min-width:235px;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s;}
+    .c-card:hover{background:rgba(255,255,255,0.08);border-color:rgba(106,180,232,0.38);transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,0.3);}
+    .c-icon{width:42px;height:42px;border-radius:8px;flex-shrink:0;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;}
+    .c-icon svg{width:18px;height:18px;fill:rgba(255,255,255,0.7);}
+    .c-label{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);font-weight:600;margin-bottom:0.2rem;}
+    .c-val{font-size:.84rem;color:rgba(255,255,255,0.92);font-weight:500;}
+
+    footer{background:#040914;text-align:center;padding:2.2rem 5% 2rem;border-top:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;}
+    .footer-inner{display:flex;flex-direction:column;align-items:center;gap:.4rem;position:relative;z-index:1;}
+    .footer-logo{font-family:Georgia,serif;font-size:1.3rem;color:rgba(255,255,255,.55);letter-spacing:.14em;background:none;-webkit-text-fill-color:initial;}
+    .footer-text{color:rgba(255,255,255,.35);font-size:0.76rem;letter-spacing:0.04em;}
 
     @media(max-width:900px){
-      nav{padding:0 4%;}section{padding:5rem 4%;}
+      nav{padding:0 4%;}section{padding:3.2rem 4%;}
       #home{grid-template-columns:1fr;}.hero-left{padding:2.5rem 5%;}
       .hero-name .line1{white-space:normal;}.hero-right{display:none;}
       .about-grid,.feat-grid,.other-grid{grid-template-columns:1fr;}
       .about-pills-grid{grid-template-columns:1fr;}
       .exp-panel.active{grid-template-columns:1fr;}
+      .exp-tabs{flex-wrap:wrap;max-width:100%;}
       nav ul{gap:1.4rem;}
+      .arch-flow{grid-template-columns:1fr;gap:1.2rem;}
+      .arch-arrow{right:auto;bottom:-14px;top:auto;transform:rotate(90deg);}
+      .ai-highlights-grid{grid-template-columns:1fr;}
+      .work-roles-timeline{padding-left:1.5rem;}
+      .edu-timeline{padding-left:2rem;}
     }
   </style>
 </head>
@@ -230,8 +332,10 @@
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#expertise">Expertise</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -248,13 +352,23 @@
   <div class="bub" style="width:10px;height:10px;background:rgba(106,180,232,0.6);top:80%;left:37%;--ty:-8px;--d:3.5s;--dl:2s;"></div>
 
   <div class="hero-left">
-    <div class="hero-badge">CEP-CCIT FTUI Student &amp; Developer</div>
+    <div class="hero-badge">Information Technology Graduate · CEP-CCIT FTUI</div>
     <h1 class="hero-name">
-      <span class="line1">Backend-<em>Focused</em></span>
-      <span class="line2">Full Stack Developer<span class="dot">.</span></span>
+      <span class="line1">Backend</span>
+      <span class="line2">Developer<span class="dot">.</span></span>
     </h1>
-    <p class="hero-role">Hi, I'm <strong>Sarah Nurhaliza</strong></p>
-    <p class="hero-desc">I architect powerful backend systems and bring them to life on the web — building from the core out, with clean logic and elegant interfaces.</p>
+    <p class="hero-role">Hi, I'm <strong>Sarah Nurhaliza</strong> &nbsp;<span style="font-size:0.75rem;padding:0.25rem 0.7rem;background:rgba(106,180,232,0.18);color:var(--royal);border-radius:100px;font-weight:700;letter-spacing:0.04em;">🟢 Open to Full-Time Roles</span></p>
+    <p class="hero-desc">Backend Developer with industry experience in payment technology & scalable cloud systems. Architecting Go modular monoliths, Spring Boot biller gateways with RabbitMQ, and designing backend data readiness for intelligent automation.</p>
+    
+    <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:1rem;margin-bottom:0.5rem;">
+      <span class="work-tool-tag" style="background:rgba(106,180,232,0.15);color:var(--royal);font-weight:700;">Go (Golang)</span>
+      <span class="work-tool-tag" style="background:rgba(106,180,232,0.15);color:var(--royal);font-weight:700;">Java Spring Boot</span>
+      <span class="work-tool-tag" style="background:rgba(106,180,232,0.15);color:var(--royal);font-weight:700;">RabbitMQ</span>
+      <span class="work-tool-tag" style="background:rgba(106,180,232,0.15);color:var(--royal);font-weight:700;">PostgreSQL</span>
+      <span class="work-tool-tag" style="background:rgba(106,180,232,0.15);color:var(--royal);font-weight:700;">Google Cloud Run</span>
+      <span class="work-tool-tag" style="background:rgba(106,180,232,0.15);color:var(--royal);font-weight:700;">Docker</span>
+    </div>
+
     <div class="hero-btns">
       <a href="#projects" class="btn-fill">View Projects</a>
       <a href="#contact" class="btn-ghost">Contact Me</a>
@@ -304,9 +418,9 @@
   <div class="about-grid">
     <div class="about-text rv">
       <div class="sec-head"><div class="sec-label">Who I Am</div><h2 class="sec-title">About <em>Me</em></h2></div>
-      <p>I'm a Semester 4 student at <strong>CEP-CCIT FTUI (Faculty of Engineering, Universitas Indonesia)</strong>, specializing in Full Stack Development with a deep focus on <strong>Backend Architecture, Web Development, and Mobile App Development</strong>.</p>
-      <p>My passion lies in understanding how systems work at their core — building robust, scalable backend logic and connecting it seamlessly to the web. I believe a great developer doesn't just write code; they design systems that stand the test of time.</p>
-      <p>Like a butterfly, I'm always evolving — transforming challenges into elegant solutions. Like a sunflower, I grow toward the light: always learning, always reaching further.</p>
+      <p>I am a <strong>Backend Developer</strong> with industry experience in the payment technology sector. Built 3 Biller Gateways using <strong>Java Spring Boot, RabbitMQ, and Docker</strong>, from requirements analysis to deployment.</p>
+      <p>Currently developing an ERP/POS backend platform using <strong>Go (Echo)</strong> featuring a modular monolith, multi-tenant architecture, and 50+ REST API endpoints across 10 business modules, deployed to <strong>Google Cloud Run and Firebase App Hosting</strong> via CI/CD, while designing backend data readiness for AI features.</p>
+      <p>Information Technology Graduate (Full Stack Developer concentration) from <strong>CEP-CCIT FTUI (Faculty of Engineering, Universitas Indonesia)</strong> with GPA <strong>3.47 / 4.00</strong> (awaiting final transcript), open to full-time opportunities as a Backend Developer or Software Engineer.</p>
       <div class="quote-block"><p>"The best architecture is one you never have to explain."</p></div>
     </div>
     <div class="about-photo-wrap rv">
@@ -316,11 +430,98 @@
     </div>
   </div>
   <div class="about-pills-grid">
-    <div class="pill rv"><div class="pill-icon pi-sky">🏗️</div><div><h4>System Architect</h4><p>Backend &amp; Full Stack Web</p></div></div>
-    <div class="pill rv"><div class="pill-icon pi-gold">⚡</div><div><h4>Web &amp; Mobile Stack</h4><p>HTML5, CSS3, PHP Native, Flutter</p></div></div>
-    <div class="pill rv"><div class="pill-icon pi-lav">🗄️</div><div><h4>Data Driven</h4><p>MySQL, JDBC, RESTful API</p></div></div>
-    <div class="pill rv"><div class="pill-icon pi-sky">🧩</div><div><h4>Framework Experience</h4><p>CodeIgniter 4, Spring Boot</p></div></div>
-    <div class="pill rv"><div class="pill-icon pi-deep">🦋</div><div><h4>Always Growing</h4><p>Adaptive, curious, detail-oriented</p></div></div>
+    <div class="pill rv"><div class="pill-icon pi-sky">🏗️</div><div><h4>Backend &amp; Systems</h4><p>Go (Echo), Spring Boot, Modular Monolith, Multi-Tenant</p></div></div>
+    <div class="pill rv"><div class="pill-icon pi-gold">⚡</div><div><h4>Payment &amp; Messaging</h4><p>Biller Gateways, RabbitMQ Asynchronous Queues</p></div></div>
+    <div class="pill rv"><div class="pill-icon pi-lav">🗄️</div><div><h4>High-Integrity Data</h4><p>PostgreSQL Double-Entry Ledger, Audit Trail</p></div></div>
+    <div class="pill rv"><div class="pill-icon pi-sky">☁️</div><div><h4>Cloud &amp; DevOps</h4><p>Google Cloud Run, Docker, GitHub Actions CI/CD</p></div></div>
+  </div>
+</section>
+
+<!-- WORK EXPERIENCE -->
+<section id="experience">
+  <div class="dring" style="width:220px;height:220px;border-color:rgba(106,180,232,0.08);top:-20px;left:-55px;--sd:28s;"></div>
+  <div class="spark" style="width:5px;height:5px;background:var(--royal);border-radius:50%;top:5%;right:6%;--sp:4s;"></div>
+  <div class="spark" style="width:5px;height:5px;background:var(--gold);border-radius:50%;bottom:18%;left:7%;--sp:3.5s;--spl:1s;"></div>
+
+  <div class="sec-head rv">
+    <div class="sec-label">Career Journey</div>
+    <h2 class="sec-title">Professional <em>Experience</em></h2>
+    <p class="sec-p" style="margin-top:0.75rem;margin-bottom:2.2rem;max-width:640px;margin-left:auto;margin-right:auto;text-align:center;">Industry engineering roles across payment technology and intelligent business platforms.</p>
+  </div>
+  <div class="work-grid rv">
+    <!-- Card 1: AI Engineer & System Architect -->
+    <div class="work-company-card">
+      <div class="work-company-header" style="padding-bottom:1.1rem;margin-bottom:1.3rem;">
+        <div class="work-company-info">
+          <div class="work-company-icon">🏢</div>
+          <div class="work-company-title">
+            <h3 style="font-size:1.15rem;">PT Teleanjar Mitra Global</h3>
+            <p>📍 Jakarta, Indonesia · Enterprise Systems</p>
+          </div>
+        </div>
+        <span class="work-badge-type badge-freelance">Freelance</span>
+      </div>
+
+      <div class="work-role-meta" style="margin-bottom:0.65rem;">
+        <div class="work-role-title-row">
+          <h4 style="font-size:1.15rem;">AI Engineer &amp; System Architect</h4>
+        </div>
+        <div class="work-role-date">Sep 2026 – Nov 2026</div>
+      </div>
+
+      <div class="work-tools-row">
+        <span class="work-tool-tag">Go</span>
+        <span class="work-tool-tag">Echo</span>
+        <span class="work-tool-tag">PostgreSQL</span>
+        <span class="work-tool-tag">Supabase</span>
+        <span class="work-tool-tag">Cloud Run</span>
+        <span class="work-tool-tag">Firebase</span>
+      </div>
+
+      <ul class="work-bullets">
+        <li><strong>AI Roadmap &amp; Automation Readiness:</strong> Designed technical specifications and integration workflows for AI-based automation features on the ERP/POS platform roadmap, focusing on backend data readiness for inventory demand forecasting and document data extraction (invoices/receipts).</li>
+        <li><strong>Modular Monolith &amp; Multi-Tenant Backend:</strong> Built a modular monolith and multi-tenant backend using Go and Echo, delivering 50+ REST API endpoints across 10 business modules for merchant transactions, deployed to Google Cloud Run and Firebase App Hosting via CI/CD.</li>
+        <li><strong>High-Integrity Data Architecture:</strong> Designed relational database schemas for transactions, inventory (BOM and stock counts), and a double-entry ledger in PostgreSQL/Supabase to produce audit-ready transaction histories with zero permanent deletions, ready to serve as a foundation for analytics and forecasting.</li>
+        <li><strong>Technical Planning &amp; Governance:</strong> Authored Technical Plans for each module prior to development, validating POS transactional business rules, financial data integrity, and cross-functional team execution workflows.</li>
+      </ul>
+    </div>
+
+    <!-- Card 2: Full Stack Developer Intern -->
+    <div class="work-company-card">
+      <div class="work-company-header" style="padding-bottom:1.1rem;margin-bottom:1.3rem;">
+        <div class="work-company-info">
+          <div class="work-company-icon">🏢</div>
+          <div class="work-company-title">
+            <h3 style="font-size:1.15rem;">PT Teleanjar Mitra Global</h3>
+            <p>📍 Jakarta, Indonesia · Payment Technology</p>
+          </div>
+        </div>
+        <span class="work-badge-type badge-intern">Internship</span>
+      </div>
+
+      <div class="work-role-meta" style="margin-bottom:0.65rem;">
+        <div class="work-role-title-row">
+          <h4 style="font-size:1.15rem;">Full Stack Developer Intern</h4>
+        </div>
+        <div class="work-role-date">Jun 2026 – Sep 2026</div>
+      </div>
+
+      <div class="work-tools-row">
+        <span class="work-tool-tag">Java</span>
+        <span class="work-tool-tag">Spring Boot</span>
+        <span class="work-tool-tag">RabbitMQ</span>
+        <span class="work-tool-tag">Docker</span>
+        <span class="work-tool-tag">REST API</span>
+        <span class="work-tool-tag">Figma</span>
+      </div>
+
+      <ul class="work-bullets">
+        <li><strong>Biller Gateways &amp; Message Queuing:</strong> Designed and developed 3 Biller Gateways from requirements analysis through deployment, implementing RabbitMQ for reliable asynchronous messaging and standardizing API response formats across all gateways to maintain consistent integration with the Core system.</li>
+        <li><strong>Chat-Based Payment Gateway:</strong> Developed a chat-based payment gateway from scratch as an extra initiative beyond core responsibilities, covering architectural design, authentication mechanisms, deployment, and end-to-end transaction testing.</li>
+        <li><strong>Bug Investigation &amp; Root-Cause Resolution:</strong> Conducted root-cause investigations and resolved transaction-critical bugs, executing comprehensive functional testing prior to each deployment to the development server.</li>
+        <li><strong>Internal Tooling &amp; Roadmap Planning:</strong> Redesigned internal monitoring UI prototypes in Figma, curated feature requests for product roadmap planning, and documented production test acceptance reports into the monitoring system.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -333,29 +534,31 @@
   <div class="sec-head rv"><div class="sec-label">What I Do</div><h2 class="sec-title">Technical <em>Expertise</em></h2></div>
   <div class="exp-wrap rv">
     <div class="exp-tabs">
-      <button class="exp-tab active" onclick="switchTab(this,'backend')">⚙️ Backend</button>
-      <button class="exp-tab" onclick="switchTab(this,'data')">🌐 Data &amp; DevOps</button>
-      <button class="exp-tab" onclick="switchTab(this,'frontend')">🎨 Frontend</button>
+      <button class="exp-tab active" onclick="switchTab(this,'backend')">⚙️ Backend &amp; Systems</button>
+      <button class="exp-tab" onclick="switchTab(this,'data')">🌐 Data, Cloud &amp; DevOps</button>
+      <button class="exp-tab" onclick="switchTab(this,'frontend')">🎨 Frontend &amp; Design</button>
     </div>
     <div id="tab-backend" class="exp-panel active">
-      <div class="skill-card"><div class="skill-card-icon">☕</div><h4>Java Spring Boot</h4><p>RESTful API development with layered architecture, dependency injection, and Spring Security.</p></div>
-      <div class="skill-card"><div class="skill-card-icon">🔥</div><h4>CodeIgniter 4</h4><p>MVC web application development with structured routing, controller logic, and maintainable modular architecture.</p></div>
-      <div class="skill-card"><div class="skill-card-icon">🐘</div><h4>PHP Native</h4><p>Deep HTTP flow understanding — routing, sessions, headers, and raw server-side logic without frameworks.</p></div>
-      <div class="skill-card"><div class="skill-card-icon">🖥️</div><h4>Java Desktop (Swing/AWT)</h4><p>Standalone GUI applications with event-driven architecture and direct database connectivity.</p></div>
-      <div class="skill-card"><div class="skill-card-icon">⚡</div><h4>Event-Driven Architecture</h4><p>Designing systems around asynchronous events and message-passing patterns for scalable apps.</p></div>
+      <div class="skill-card"><div class="skill-card-icon">🚀</div><h4>Go (Golang &amp; Echo)</h4><p>High-performance backend microservices, modular monoliths, multi-tenant routing, custom middleware, and low-latency REST APIs.</p></div>
+      <div class="skill-card"><div class="skill-card-icon">☕</div><h4>Java Spring Boot</h4><p>Enterprise biller payment gateways, layered architecture (Controller-Service-Repo), RabbitMQ integration, and OpenAPI specifications.</p></div>
+      <div class="skill-card"><div class="skill-card-icon">🐇</div><h4>RabbitMQ Messaging</h4><p>Asynchronous message broker, reliable transaction queueing, decoupled services, and resilient event-driven architectures.</p></div>
+      <div class="skill-card"><div class="skill-card-icon">🐘</div><h4>PHP Native &amp; CodeIgniter 4</h4><p>Deep HTTP lifecycle comprehension: custom routing, session &amp; header security, and structured MVC POS application development.</p></div>
+      <div class="skill-card"><div class="skill-card-icon">⚡</div><h4>API Design &amp; Architecture</h4><p>Modular monolith and multi-tenant architectures, RESTful API conventions, contract-first design, and Technical Plan validation.</p></div>
+      <div class="skill-card"><div class="skill-card-icon">🖥️</div><h4>Object-Oriented Programming (OOP)</h4><p>Clean code, SOLID principles, encapsulation, inheritance, and modular desktop applications with Java Swing and direct JDBC.</p></div>
     </div>
     <div id="tab-data" class="exp-panel">
-      <div class="skill-card lav"><div class="skill-card-icon">🗄️</div><h4>MySQL (JDBC/JPA)</h4><p>Expert-level relational database design, complex queries, and ORM mapping with JPA/Hibernate.</p></div>
-      <div class="skill-card lav"><div class="skill-card-icon">🐳</div><h4>Docker</h4><p>Containerizing applications and services for consistent, reproducible deployment environments.</p></div>
-      <div class="skill-card lav"><div class="skill-card-icon">🔄</div><h4>CI/CD Pipelines</h4><p>Automated testing and deployment workflows for continuous integration and delivery practices.</p></div>
-      <div class="skill-card lav"><div class="skill-card-icon">🌐</div><h4>Distributed Systems</h4><p>Building services that communicate across networks with reliability and fault tolerance in mind.</p></div>
+      <div class="skill-card lav"><div class="skill-card-icon">🗄️</div><h4>PostgreSQL &amp; Double-Entry Ledger</h4><p>High-integrity financial data schemas, append-only transaction ledgers with zero hard deletions, audit trails, and clean analytical datasets.</p></div>
+      <div class="skill-card lav"><div class="skill-card-icon">☁️</div><h4>Google Cloud Run &amp; Firebase</h4><p>Containerized serverless deployment, continuous delivery with automated builds, environment secret management, and scalable cloud hosting.</p></div>
+      <div class="skill-card lav"><div class="skill-card-icon">🐳</div><h4>Docker &amp; Containerization</h4><p>Multi-container orchestration with Docker Compose, reproducible development and production environments, and isolated dependency stacks.</p></div>
+      <div class="skill-card lav"><div class="skill-card-icon">🔄</div><h4>CI/CD &amp; GitHub Actions</h4><p>Automated build, test, and zero-touch deployment pipelines on self-hosted runners with automated container health-checks.</p></div>
+      <div class="skill-card lav"><div class="skill-card-icon">🐬</div><h4>MySQL &amp; MongoDB</h4><p>Relational schema design, optimized queries, indexing strategies, JDBC/JPA ORM, and NoSQL database modeling across academic projects.</p></div>
+      <div class="skill-card lav"><div class="skill-card-icon">⚡</div><h4>Supabase Backend Services</h4><p>Cloud PostgreSQL database management, row-level security (RLS), authentication integration, and real-time backend tooling.</p></div>
     </div>
     <div id="tab-frontend" class="exp-panel">
-      <div class="skill-card gold"><div class="skill-card-icon">📱</div><h4>Flutter</h4><p>Cross-platform mobile app development with reusable widgets, responsive UI, and REST API integration.</p></div>
-      <div class="skill-card gold"><div class="skill-card-icon">🌐</div><h4>Web Native (HTML5, CSS3)</h4><p>Pure semantic markup and modern CSS — no framework dependency, full control over the output.</p></div>
-      <div class="skill-card gold"><div class="skill-card-icon">✨</div><h4>Vanilla JavaScript</h4><p>DOM manipulation, async/await, fetch API, and interactive UI without relying on external libraries.</p></div>
-      <div class="skill-card gold"><div class="skill-card-icon">☕</div><h4>Java GUI Components</h4><p>Swing and AWT component design, layout managers, and custom-painted user interface elements.</p></div>
-      <div class="skill-card gold"><div class="skill-card-icon">📱</div><h4>Responsive Design</h4><p>Fluid layouts, media queries, and mobile-first thinking for great UX across all screen sizes.</p></div>
+      <div class="skill-card gold"><div class="skill-card-icon">📱</div><h4>Flutter Mobile</h4><p>Cross-platform mobile applications with clean component structure, responsive UI, theme support, and client-server REST API synchronization.</p></div>
+      <div class="skill-card gold"><div class="skill-card-icon">🌐</div><h4>Web Native (HTML5, CSS3)</h4><p>Semantic markup, responsive layouts, CSS variables, and modern design systems without bloated external framework dependencies.</p></div>
+      <div class="skill-card gold"><div class="skill-card-icon">✨</div><h4>Vanilla JavaScript</h4><p>DOM manipulation, async/await asynchronous operations, Fetch API networking, and dynamic UI interactions.</p></div>
+      <div class="skill-card gold"><div class="skill-card-icon">🎨</div><h4>Figma UI/UX Prototyping</h4><p>Interactive prototypes, internal monitoring dashboards, user journey mapping, accessibility design, and product roadmap feature curation.</p></div>
     </div>
   </div>
 </section>
@@ -369,32 +572,109 @@
   <div class="sec-head rv">
     <div class="sec-ew"><div class="ew-bar"></div><span>My Work</span></div>
     <h2 class="sec-h">Selected <em>Projects</em></h2>
-    <p class="sec-p">Real systems built with real constraints - no tutorials, no shortcuts.</p>
+    <p class="sec-p">Real systems built with real constraints: no tutorials, no shortcuts.</p>
   </div>
   <div class="proj-wrap">
-    <div class="psec-label rv">⭐ Featured Projects</div>
+    <!-- AI ARCHITECTURE SHOWCASE CARD -->
+    <div class="fc-ai-showcase rv">
+      <div class="ai-header-bar">
+        <div class="ai-badge-group">
+          <span class="ai-tag-pill gold">Featured System Architecture</span>
+          <span class="ai-tag-pill">AI Automation Readiness</span>
+          <span class="ai-tag-pill">PT Teleanjar Mitra Global</span>
+        </div>
+        <div class="ai-title-wrap">
+          <h3>ERP &amp; POS Modular Monolith: AI Automation Readiness Architecture</h3>
+          <p>Designed the architectural foundation, data contracts, and high-integrity schemas for enterprise ERP/POS systems to bridge transactional operations with intelligent automation.</p>
+        </div>
+        <div class="tags" style="margin-top:0.9rem;">
+          <span class="tag" style="background:rgba(255,255,255,0.18);color:white;border-color:rgba(255,255,255,0.3);">Go (Echo)</span>
+          <span class="tag" style="background:rgba(255,255,255,0.18);color:white;border-color:rgba(255,255,255,0.3);">PostgreSQL</span>
+          <span class="tag" style="background:rgba(255,255,255,0.18);color:white;border-color:rgba(255,255,255,0.3);">Google Cloud Run</span>
+          <span class="tag" style="background:rgba(255,255,255,0.18);color:white;border-color:rgba(255,255,255,0.3);">Supabase</span>
+          <span class="tag" style="background:rgba(255,255,255,0.18);color:white;border-color:rgba(255,255,255,0.3);">Double-Entry Ledger</span>
+        </div>
+      </div>
+
+      <div class="ai-body">
+        <div class="arch-diagram">
+          <div class="arch-diagram-title">
+            <span>⚡ End-to-End System Integration Flow</span>
+          </div>
+          <div class="arch-flow">
+            <div class="arch-step">
+              <div class="arch-step-num">Step 01 · Ingestion</div>
+              <div class="arch-step-icon">🧾</div>
+              <h5>Merchant &amp; Receipt Input</h5>
+              <p>POS transactions, stock counts &amp; supplier invoice uploads</p>
+              <div class="arch-arrow">→</div>
+            </div>
+
+            <div class="arch-step">
+              <div class="arch-step-num">Step 02 · Backend API</div>
+              <div class="arch-step-icon">🚀</div>
+              <h5>Go Echo REST API</h5>
+              <p>Multi-tenant routing &amp; validation on Google Cloud Run</p>
+              <div class="arch-arrow">→</div>
+            </div>
+
+            <div class="arch-step">
+              <div class="arch-step-num">Step 03 · Storage</div>
+              <div class="arch-step-icon">🗄️</div>
+              <h5>PostgreSQL Audit Ledger</h5>
+              <p>Double-entry accounting with zero permanent deletions</p>
+              <div class="arch-arrow">→</div>
+            </div>
+
+            <div class="arch-step">
+              <div class="arch-step-num">Step 04 · AI Pipeline</div>
+              <div class="arch-step-icon">🤖</div>
+              <h5>Forecasting &amp; OCR Engine</h5>
+              <p>Clean training data for stock prediction &amp; receipt extraction</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-highlights-grid">
+          <div class="ai-hl-card">
+            <h4>📈 Demand Forecasting Pipeline</h4>
+            <p>Designed historical inventory and sales event logging with low latency to serve as high-quality time-series input for machine learning models predicting automated stock replenishment.</p>
+          </div>
+          <div class="ai-hl-card">
+            <h4>📄 Smart Document Extraction (OCR)</h4>
+            <p>Architected API specifications and background processing workflows to ingest supplier invoice photos, parsing raw text into structured Purchase Orders automatically.</p>
+          </div>
+          <div class="ai-hl-card">
+            <h4>🛡️ High-Integrity Double-Entry Ledger</h4>
+            <p>Enforced an append-only double-entry financial ledger in PostgreSQL with strict soft-deletes and audit trails, ensuring analytical datasets remain clean, verifiable, and free of anomalies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="psec-label rv">⭐ Featured Production &amp; Academic Projects</div>
     <div class="feat-grid">
       <div class="fc rv">
         <div class="ft ft-ind">
           <span class="ft-bdg">⭐ Featured</span>
           <span class="ft-em">🧪</span>
           <div class="ft-stats">
-            <div class="ft-st"><span class="n">REST</span><span class="l">API</span></div>
-            <div class="ft-st"><span class="n">Spring</span><span class="l">Boot</span></div>
+            <div class="ft-st"><span class="n">Spring Boot</span><span class="l">Backend</span></div>
+            <div class="ft-st"><span class="n">REST API</span><span class="l">Layered</span></div>
             <div class="ft-st"><span class="n">CI/CD</span><span class="l">Pipeline</span></div>
           </div>
         </div>
         <div class="fb">
           <div class="fb-top"><span class="fb-type">Backend / REST API</span><span class="fb-tag teal">Featured</span></div>
-          <h3>Laboratory Inventory System</h3>
-          <p>RESTful API for the Distributed System module - manages lab equipment and student transactions with layered Spring Boot architecture.</p>
+          <h3>Inventory Laboratory System</h3>
+          <p>Centralized inventory management system built with Java Spring Boot, replacing error-prone manual lab asset tracking with an accurate, unified digital solution.</p>
           <div class="fb-hl">
             <div class="fhl">Layered architecture: Controller -&gt; Service -&gt; Repository</div>
-            <div class="fhl">Auto-generated Swagger/OpenAPI docs</div>
-            <div class="fhl">CI/CD pipeline for automated build &amp; deployment</div>
-            <div class="fhl">Designed for distributed systems - built with scalability</div>
+            <div class="fhl">Automates stock inflow and outflow transactions to eliminate stock discrepancies</div>
+            <div class="fhl">Comprehensive system validations to minimize manual input dependency</div>
+            <div class="fhl">Auto-generated Swagger/OpenAPI documentation for client teams</div>
           </div>
-          <div class="tags"><span class="tag">Java Spring Boot</span><span class="tag">Java 25</span><span class="tag">Swagger</span><span class="tag">CI/CD</span><span class="tag">REST</span></div>
+          <div class="tags"><span class="tag">Java Spring Boot</span><span class="tag">REST API</span><span class="tag">Swagger</span><span class="tag">MySQL</span><span class="tag">OOP</span></div>
           <div class="fl"><a href="https://github.com/neyzamaylanies/inventory_laboratorium" target="_blank" class="pbtn fill">Repository →</a></div>
         </div>
       </div>
@@ -403,53 +683,30 @@
           <span class="ft-bdg">⭐ Featured</span>
           <span class="ft-em">🏥</span>
           <div class="ft-stats">
-            <div class="ft-st"><span class="n">PHP Native</span><span class="l">Web App</span></div>
             <div class="ft-st"><span class="n">Docker</span><span class="l">Container</span></div>
-            <div class="ft-st"><span class="n">RBAC</span><span class="l">Multi-Role</span></div>
+            <div class="ft-st"><span class="n">CI/CD</span><span class="l">Actions</span></div>
+            <div class="ft-st"><span class="n">PHP Native</span><span class="l">Web App</span></div>
           </div>
         </div>
         <div class="fb">
-          <div class="fb-top"><span class="fb-type">Web Application (WAP)</span><span class="fb-tag teal">Featured</span></div>
-          <h3>Pharmacy Management System</h3>
-          <p>Full pharmacy ops digitized - PHP Native with zero framework dependency, containerized with Docker for consistent deployment.</p>
+          <div class="fb-top"><span class="fb-type">DevOps &amp; Web Architecture</span><span class="fb-tag teal">Featured</span></div>
+          <h3>PharmaCare: Management System</h3>
+          <p>Full pharmacy operations digitized using Native PHP with zero external frameworks, containerized with Docker, and deployed via self-hosted GitHub Actions CI/CD.</p>
           <div class="fb-hl">
-            <div class="fhl">Pure PHP Native - custom routing, session &amp; header management</div>
-            <div class="fhl">Dockerized - identical behavior across all environments</div>
-            <div class="fhl">Role-based access: admin, pharmacist, cashier</div>
-            <div class="fhl">Expiration alerts &amp; real-time stock tracking</div>
+            <div class="fhl">Containerized using Docker and Docker Compose for uniform environments</div>
+            <div class="fhl">Automated CI/CD pipeline on self-hosted runner for zero-touch deployment</div>
+            <div class="fhl">Automated container rebuilding and health checks on push to main</div>
+            <div class="fhl">Authored deployment and maintenance documentation for cross-team operation</div>
           </div>
-          <div class="tags"><span class="tag">PHP Native</span><span class="tag">MySQL</span><span class="tag">Docker</span><span class="tag">RBAC</span></div>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">PHP Native</span><span class="tag">MySQL</span></div>
           <div class="fl"><a href="https://github.com/sarahnrhlzaa/Pharmacare-WebPharmacy" target="_blank" class="pbtn fill">Repository →</a></div>
         </div>
       </div>
     </div>
 
-    <div class="psec-label rv">Other Projects</div>
+    <div class="psec-label rv">Additional Systems &amp; Engineering Projects</div>
     <div class="other-grid">
-      <div class="oc rv">
-        <div class="ot ft-navy">
-          <span class="ot-em">📱</span>
-          <div class="ot-st">
-            <div class="ostat"><span class="n">Flutter</span><span class="l">Mobile</span></div>
-            <div class="ostat"><span class="n">REST</span><span class="l">API</span></div>
-          </div>
-        </div>
-        <div class="ob">
-          <div class="ob-type">Mobile Application</div>
-          <h3>Alchemist: Inventory Laboratory Mobile App</h3>
-          <p>Laboratory inventory system reimagined for mobile - built with Flutter and powered by REST API, enabling real-time data synchronization across devices.</p>
-          <div class="ob-hl">
-            <div class="ohl">Flutter-based mobile app - responsive UI with dark/light theme support</div>
-            <div class="ohl">REST API integration - seamless client-server communication via local network</div>
-            <div class="ohl">Role-based management: employee &amp; student data handling</div>
-            <div class="ohl">Laboratory asset tracking - categories, condition logs, and stock monitoring</div>
-            <div class="ohl">Stock transaction system - manage incoming &amp; outgoing inventory</div>
-            <div class="ohl">User experience features - notifications, settings, and account management</div>
-          </div>
-          <div class="tags"><span class="tag">Flutter</span><span class="tag">REST API</span><span class="tag">Mobile</span><span class="tag">Inventory</span></div>
-          <div class="ol"><a href="#" class="pbtn">Repository →</a></div>
-        </div>
-      </div>
+      <!-- BiteSpace POS -->
       <div class="oc rv">
         <div class="ot ft-teal">
           <span class="ot-em">🍽️</span>
@@ -459,42 +716,89 @@
           </div>
         </div>
         <div class="ob">
-          <div class="ob-type">Web POS System</div>
+          <div class="ob-type">Web POS System · Feb 2026 – Mar 2026</div>
           <h3>BiteSpace: Restaurant POS System</h3>
-          <p>Modern restaurant operations simplified - a web-based POS system built with CodeIgniter 4 to manage orders, menus, and transactions efficiently.</p>
+          <p>Web-based Point of Sale (POS) system built with CodeIgniter 4, accelerating cashier checkout workflows and streamlining restaurant operations.</p>
           <div class="ob-hl">
-            <div class="ohl">CodeIgniter 4 powered - structured MVC architecture for scalable development</div>
-            <div class="ohl">Point of Sale system - streamlined order processing and transaction handling</div>
-            <div class="ohl">Role-based access: admin &amp; cashier for controlled system operations</div>
-            <div class="ohl">Menu &amp; table management - organized handling of restaurant data</div>
-            <div class="ohl">Transaction tracking - efficient recording of daily sales activities</div>
-            <div class="ohl">User-friendly interface - optimized for fast-paced cashier interactions</div>
+            <div class="ohl">Structured MVC architecture for fast and maintainable feature delivery</div>
+            <div class="ohl">Integrated workflows for menu management, table reservations, and orders</div>
+            <div class="ohl">Role-based access control (Admin and Cashier) with strict MySQL integrity</div>
           </div>
-          <div class="tags"><span class="tag">CodeIgniter 4</span><span class="tag">MySQL</span><span class="tag">POS</span><span class="tag">RBAC</span></div>
-          <div class="ol"><a href="#" class="pbtn">Repository →</a></div>
+          <div class="tags"><span class="tag">CodeIgniter 4</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">POS</span><span class="tag">RBAC</span></div>
+          <div class="ol"><a href="https://github.com/sarahnrhlzaa/BiteSpace" target="_blank" class="pbtn">Repository →</a></div>
         </div>
       </div>
+
+      <!-- Alchemist Flutter -->
+      <div class="oc rv">
+        <div class="ot ft-navy">
+          <span class="ot-em">📱</span>
+          <div class="ot-st">
+            <div class="ostat"><span class="n">Flutter</span><span class="l">Mobile</span></div>
+            <div class="ostat"><span class="n">REST</span><span class="l">API</span></div>
+          </div>
+        </div>
+        <div class="ob">
+          <div class="ob-type">Mobile Application · Mar 2026 – Apr 2026</div>
+          <h3>Alchemist: Inventory Laboratory Mobile App</h3>
+          <p>Cross-platform mobile application built with Flutter as an extension of the Spring Boot Inventory Laboratory system, synchronizing data in real time.</p>
+          <div class="ob-hl">
+            <div class="ohl">Integrated client-server REST APIs over local networks for live sync</div>
+            <div class="ohl">Equipment tracking, stock mutations, and condition monitoring</div>
+            <div class="ohl">Role-based user management, theme customization, and notification handling</div>
+          </div>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">REST API</span><span class="tag">Mobile</span><span class="tag">Inventory</span></div>
+          <div class="ol"><a href="https://github.com/neyzamaylanies/Alchemist-Flutter" target="_blank" class="pbtn">Repository →</a></div>
+        </div>
+      </div>
+
+      <!-- Stock of Medicine -->
       <div class="oc rv">
         <div class="ot ft-ind">
           <span class="ot-em">🖥️</span>
           <div class="ot-st">
+            <div class="ostat"><span class="n">OOP</span><span class="l">Java</span></div>
             <div class="ostat"><span class="n">JDBC</span><span class="l">Direct DB</span></div>
-            <div class="ostat"><span class="n">Swing</span><span class="l">GUI</span></div>
           </div>
         </div>
         <div class="ob">
-          <div class="ob-type">Desktop Application</div>
-          <h3>Java Swing Pharmacy GUI</h3>
-          <p>Standalone desktop app for real-time stock and supplier management. Direct JDBC - no ORM, full query control.</p>
+          <div class="ob-type">Desktop Application · Feb 2025 – Mar 2025</div>
+          <h3>Stock of Medicine: Pharmacy Management</h3>
+          <p>Desktop application built using Object-Oriented Programming (OOP) and Java Swing to digitize medicine data management and stock record-keeping.</p>
           <div class="ob-hl">
-            <div class="ohl">Event-driven Swing GUI with custom layout managers</div>
-            <div class="ohl">Direct JDBC - low-level database control, no ORM abstraction</div>
-            <div class="ohl">Real-time stock updates &amp; supplier management</div>
+            <div class="ohl">Applied OOP principles (inheritance, encapsulation) for modular codebase</div>
+            <div class="ohl">Full CRUD operations and structured report generation tools</div>
+            <div class="ohl">Direct JDBC connectivity to MySQL without heavy ORM overhead</div>
           </div>
-          <div class="tags"><span class="tag">Java Swing</span><span class="tag">JDBC</span><span class="tag">MySQL</span></div>
+          <div class="tags"><span class="tag">Java Swing</span><span class="tag">OOP</span><span class="tag">JDBC</span><span class="tag">MySQL</span></div>
           <div class="ol"><a href="https://github.com/sarahnrhlzaa/GUI-PharmacyManagementSystem" target="_blank" class="pbtn">Repository →</a></div>
         </div>
       </div>
+
+      <!-- Web Pharmacy System Native PHP -->
+      <div class="oc rv">
+        <div class="ot ft-teal">
+          <span class="ot-em">💊</span>
+          <div class="ot-st">
+            <div class="ostat"><span class="n">Native PHP</span><span class="l">Core</span></div>
+            <div class="ostat"><span class="n">MySQL</span><span class="l">Relational</span></div>
+          </div>
+        </div>
+        <div class="ob">
+          <div class="ob-type">Web Application · Oct 2025</div>
+          <h3>Web Pharmacy System</h3>
+          <p>Web-based pharmacy management system developed using Native PHP, controlling transaction workflows, medicine inventory, and stock digitally.</p>
+          <div class="ob-hl">
+            <div class="ohl">Engineered with pure Native PHP with custom HTTP flow and no framework</div>
+            <div class="ohl">Session-based authentication securing role access and data integrity</div>
+            <div class="ohl">Structured MySQL relational schemas for efficient medication queries</div>
+          </div>
+          <div class="tags"><span class="tag">PHP Native</span><span class="tag">MySQL</span><span class="tag">Authentication</span><span class="tag">Web</span></div>
+          <div class="ol"><a href="https://github.com/sarahnrhlzaa/PHP_WebsitePharmacy" target="_blank" class="pbtn">Repository →</a></div>
+        </div>
+      </div>
+
+      <!-- Brainventure App -->
       <div class="oc rv">
         <div class="ot ft-amb">
           <span class="ot-em">🧠</span>
@@ -504,24 +808,143 @@
           </div>
         </div>
         <div class="ob">
-          <div class="ob-type">UI/UX Design</div>
+          <div class="ob-type">UI/UX Design &amp; Prototyping</div>
           <h3>Brainventure App</h3>
-          <p>Gamified educational platform - puzzles and logic challenges that make learning engaging for all ages.</p>
+          <p>Gamified educational platform featuring interactive puzzles and logic challenges designed to make learning engaging and intuitive for all ages.</p>
           <div class="ob-hl">
-            <div class="ohl">Full interactive Figma prototype with user flows</div>
-            <div class="ohl">Gamification mechanics &amp; reward system design</div>
-            <div class="ohl">Accessibility-aware component design</div>
+            <div class="ohl">Full interactive Figma prototype with detailed user flows</div>
+            <div class="ohl">Gamification mechanics, rewards, and progression system design</div>
+            <div class="ohl">Accessibility-first typography, contrast, and component design</div>
           </div>
-          <div class="tags"><span class="tag">Figma</span><span class="tag">Prototyping</span><span class="tag">UX Research</span></div>
-          <div class="ol"><a href="https://www.figma.com/design/shZFvi1xjHLyWjD3RgQunu/BrainVenture?node-id=0-1" target="_blank" class="pbtn">Figma →</a></div>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">Prototyping</span><span class="tag">UX Research</span><span class="tag">Wireframing</span></div>
+          <div class="ol"><a href="https://www.figma.com/design/shZFvi1xjHLyWjD3RgQunu/BrainVenture?node-id=0-1" target="_blank" class="pbtn">Figma Prototype →</a></div>
+        </div>
+      </div>
+
+      <!-- Explore More on GitHub Card (Fills 6th slot) -->
+      <div class="oc rv gh-card-oc">
+        <div class="ot ft-navy" style="background: linear-gradient(135deg, #0c2548, #163c72);">
+          <span class="ot-em">🐙</span>
+          <div class="ot-st">
+            <div class="ostat"><span class="n">12+</span><span class="l">Repositories</span></div>
+            <div class="ostat"><span class="n">Open</span><span class="l">Source</span></div>
+          </div>
+        </div>
+        <div class="ob">
+          <div class="ob-type">Code &amp; Architecture Showcase</div>
+          <h3>Explore More on GitHub</h3>
+          <p>Discover complete repository sources, experimental branches, database schemas, and backend microservice implementations.</p>
+          <div class="ob-hl">
+            <div class="ohl">Full backend codebases with clean documentation and API contracts</div>
+            <div class="ohl">Active commit history across Java, Go, PHP, Flutter, and Docker stacks</div>
+            <div class="ohl">Complete capstones and academic engineering repositories</div>
+          </div>
+          <div class="tags"><span class="tag">GitHub</span><span class="tag">Open Source</span><span class="tag">REST API</span><span class="tag">CI/CD</span></div>
+          <div class="ol"><a href="https://github.com/sarahnrhlzaa" target="_blank" class="pbtn fill">Visit GitHub Profile →</a></div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="gh-cta rv">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-      <span>More projects available on</span>
-      <a href="https://github.com/sarahnrhlzaa" target="_blank">github.com/sarahnrhlzaa</a>
+<!-- EDUCATION & LEADERSHIP -->
+<section id="education">
+  <div class="dring" style="width:230px;height:230px;border-color:rgba(184,169,224,0.1);top:-30px;left:-60px;--sd:30s;"></div>
+  <div class="spark" style="width:5px;height:5px;background:var(--royal);border-radius:50%;top:10%;right:8%;--sp:4.5s;"></div>
+  <div class="spark" style="width:5px;height:5px;background:var(--gold);border-radius:50%;bottom:12%;left:5%;--sp:4s;--spl:1.5s;"></div>
+
+  <div class="sec-head rv">
+    <div class="sec-ew"><div class="ew-bar"></div><span>Academic &amp; Leadership</span></div>
+    <h2 class="sec-h">Education &amp; <em>Leadership</em></h2>
+    <p class="sec-p">Formal engineering education and organizational leadership track record.</p>
+  </div>
+  <div class="edu-wrap rv">
+    <!-- Top Hero Card: CEP-CCIT FTUI -->
+    <div class="edu-hero-card">
+      <div class="edu-header">
+        <div class="edu-header-left">
+          <div class="edu-icon-box">🎓</div>
+          <div>
+            <h3>CEP-CCIT FTUI, Universitas Indonesia</h3>
+            <div class="edu-major">Professional Program in Information Technology, Full Stack Developer · Jakarta, Indonesia</div>
+            <div class="edu-year" style="margin-bottom:0;">2024 – 2026</div>
+          </div>
+        </div>
+        <span class="edu-badge edu-badge-gold">🎓 Graduated · GPA 3.47 / 4.00 (Awaiting Final Transcript)</span>
+      </div>
+      <p class="edu-desc">Comprehensive two-year professional engineering program at Continuing Education Program, Center for Computing and Information Technology, Faculty of Engineering, Universitas Indonesia.</p>
+      <div class="edu-hero-skills">
+        <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">☕</span><div><h5>Backend Systems &amp; Web Applications</h5><p>Developed web applications using Java, PHP, and MySQL across academic and capstone projects.</p></div></div>
+        <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">⚡</span><div><h5>REST APIs &amp; OOP Principles</h5><p>Implemented RESTful APIs and applied Object-Oriented Programming (OOP) for modular architectures.</p></div></div>
+        <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">🗄️</span><div><h5>Relational Database Engineering</h5><p>Designed relational databases (MySQL, PostgreSQL) ensuring business rules and data consistency.</p></div></div>
+        <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">🌐</span><div><h5>Full Stack User Interfaces</h5><p>Built native, performant user interfaces using semantic HTML, CSS, and Vanilla JavaScript.</p></div></div>
+        <div class="edu-skill edu-skill-center"><span style="font-size:1.1rem;flex-shrink:0;">🚀</span><div><h5>Complementary Technologies</h5><p>Explored Flutter, Docker, and MongoDB through cross-semester projects to broaden engineering depth.</p></div></div>
+      </div>
+      <div class="edu-tags">
+        <span class="tag">Java</span>
+        <span class="tag">Go</span>
+        <span class="tag">PHP</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Docker</span>
+        <span class="tag">REST API</span>
+      </div>
+    </div>
+
+    <!-- Bottom Subgrid: CCIT Squad (Kiri) & SMAN 2 Cibinong (Kanan) -->
+    <div class="edu-subgrid">
+      <!-- Card Kiri: CCIT Squad Leadership -->
+      <div class="edu-card card-org">
+        <div class="edu-header">
+          <div class="edu-header-left">
+            <div class="edu-icon-box gold">👥</div>
+            <div>
+              <h3>CCIT Squad – CCIT FTUI</h3>
+              <div class="edu-major">Vice Head of Event Division · Jakarta</div>
+              <div class="edu-year" style="margin-bottom:0;">Nov 2024 — Jan 2025</div>
+            </div>
+          </div>
+          <span class="edu-badge edu-badge-gold">Organizational Leadership</span>
+        </div>
+        <p class="edu-desc">Served as Vice Head of the Event Division, leading event management, coordination, and logistical execution for university-wide flagship initiatives.</p>
+        <div class="edu-skills">
+          <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">🏛️</span><div><h5>Event Operations &amp; Logistics</h5><p>Managed an open house event hosting ±300 attendees, overseeing run-of-show and guest flow.</p></div></div>
+          <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">🤝</span><div><h5>Cross-Functional Team Collaboration</h5><p>Collaborated closely with division teams (creative, logistics, sponsorship) to ensure seamless delivery.</p></div></div>
+          <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">⚡</span><div><h5>Problem Solving &amp; Execution</h5><p>Maintained real-time on-site coordination and rapid troubleshooting during live event operations.</p></div></div>
+        </div>
+        <div class="edu-tags">
+          <span class="tag">Event Leadership</span>
+          <span class="tag">Logistics Management</span>
+          <span class="tag">Cross-Functional Coordination</span>
+          <span class="tag">Public Speaking</span>
+        </div>
+      </div>
+
+      <!-- Card Kanan: SMA Negeri 2 Cibinong -->
+      <div class="edu-card card-hs">
+        <div class="edu-header">
+          <div class="edu-header-left">
+            <div class="edu-icon-box">🏫</div>
+            <div>
+              <h3>SMA Negeri 2 Cibinong</h3>
+              <div class="edu-major">Ilmu Pengetahuan Alam (Natural Science) · Bogor</div>
+              <div class="edu-year" style="margin-bottom:0;">2020 — 2023</div>
+            </div>
+          </div>
+          <span class="edu-badge edu-badge-blue">Graduated</span>
+        </div>
+        <p class="edu-desc">Graduated from the science program with strong analytical foundations. Regularly participated in public speaking competitions, honing clear communication and leadership alongside rigorous coursework.</p>
+        <div class="edu-skills">
+          <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">🎤</span><div><h5>Public Speaking &amp; Communication</h5><p>Actively competed in public speaking events, cultivating confident communication and presentation skills.</p></div></div>
+          <div class="edu-skill"><span style="font-size:1.1rem;flex-shrink:0;margin-top:2px;">🏆</span><div><h5>Leadership &amp; Initiative</h5><p>Took active leadership in school organizations and committees, driving projects to completion.</p></div></div>
+        </div>
+        <div class="edu-tags">
+          <span class="tag">Natural Science</span>
+          <span class="tag">Public Speaking</span>
+          <span class="tag">Team Coordination</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -534,29 +957,31 @@
   <div class="spark" style="width:5px;height:5px;background:rgba(106,180,232,0.5);border-radius:50%;top:20%;right:12%;--sp:4s;--spl:1s;"></div>
   <div class="spark" style="width:4px;height:4px;background:rgba(240,180,41,0.5);border-radius:50%;bottom:30%;left:15%;--sp:5s;--spl:2s;"></div>
 
-  <div class="sec-head rv"><div class="sec-label">Get In Touch</div><h2 class="sec-title">Let's <em>Connect</em></h2></div>
-  <p class="contact-intro rv">I'm open to internship opportunities, backend system discussions, and web development collaborations. Let's build something great together!</p>
+  <div class="sec-head rv">
+    <div class="sec-ew"><div class="ew-bar"></div><span>GET IN TOUCH</span><div class="ew-bar"></div></div>
+    <h2 class="sec-title">Let's <em>Connect</em></h2>
+  </div>
+  <p class="contact-intro rv">I'm open to full-time Backend Developer roles, software engineering discussions, and high-performance system collaborations. Feel free to reach out!</p>
   <div class="contact-cards rv">
     <a href="mailto:sarahnrhlza3rut@gmail.com" class="c-card">
       <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-      <div><div class="c-label">Email</div><div class="c-val">sarahnrhlza3rut@gmail.com</div></div>
+      <div><div class="c-label">EMAIL</div><div class="c-val">sarahnrhlza3rut@gmail.com</div></div>
     </a>
     <a href="https://github.com/sarahnrhlzaa" target="_blank" class="c-card">
       <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></div>
-      <div><div class="c-label">GitHub</div><div class="c-val">github.com/sarahnrhlzaa</div></div>
+      <div><div class="c-label">GITHUB</div><div class="c-val">github.com/sarahnrhlzaa</div></div>
     </a>
     <a href="https://www.linkedin.com/in/sarah-nurhaliza-a12927300" target="_blank" class="c-card">
       <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
-      <div><div class="c-label">LinkedIn</div><div class="c-val">sarah-nurhaliza</div></div>
+      <div><div class="c-label">LINKEDIN</div><div class="c-val">sarah-nurhaliza</div></div>
     </a>
   </div>
 </section>
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">SN &#10022;</div>
-    <div class="footer-line"></div>
-    <div class="footer-text">&copy; 2025 Sarah Nurhaliza &nbsp;&middot;&nbsp; Backend-Focused Full Stack Developer &nbsp;&middot;&nbsp; Pure HTML/CSS/JS</div>
+    <div class="footer-logo">SN</div>
+    <div class="footer-text">&copy; 2026 Sarah Nurhaliza &middot; Backend Developer</div>
   </div>
 </footer>
 
